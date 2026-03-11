@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+  <!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+
+<!-- Microsoft Clarity Heatmaps -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "XXXXXXXX");
+</script>
+
+
+<!-- Better LocalBusiness Schema -->
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"AutoDetailing",
+"name":"A2Z Detailing",
+"url":"https://a2zdetailing.ca",
+"telephone":"+1-250-891-7075",
+"areaServed":[
+"Victoria BC",
+"Langford BC",
+"Sidney BC",
+"Duncan BC"
+],
+"serviceType":[
+"Auto Detailing",
+"House Cleaning",
+"Pressure Washing"
+]
+}
+</script>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A2Z Detailing | Victoria BC — Auto Detailing, House Cleaning & Pressure Washing</title>
+<meta name="description" content="Professional auto detailing, house cleaning, move-out cleaning, and pressure washing services across Victoria BC, Langford, Sidney, Duncan and surrounding areas.">
+<link rel="canonical" href="https://a2zdetailing.ca/">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"A2Z Detailing","telephone":"+1-250-891-7075","areaServed":["Victoria BC","Langford BC","Sidney BC","Duncan BC"],"serviceType":["Auto Detailing","House Cleaning","Pressure Washing"],"url":"https://a2zdetailing.ca/"}
+</script>
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', system-ui, sans-serif; background: #fff; color: #0f172a; overflow-x: hidden; }
+.pf { font-family: 'Playfair Display', Georgia, serif; }
+:root { --gold: #c9933a; --navy: #0a0f1e; --navy2: #0d1525; }
+
+/* ── HERO: full-bleed cinematic ── */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 640px;
+  max-height: 900px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background-image: url('images/image_1 (3).webp');
+  background-size: cover;
+  background-position: center 40%;
+  transform: scale(1.04);
+  transition: transform 6s ease;
+}
+.hero-bg.loaded { transform: scale(1); }
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(7,10,20,.92) 0%,
+    rgba(7,10,20,.55) 45%,
+    rgba(7,10,20,.15) 100%
+  );
+}
+.hero-content {
+  position: relative; z-index: 2;
+  width: 100%; max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: .65rem;
+  background: rgba(201,147,58,.15);
+  border: 1px solid rgba(201,147,58,.35);
+  color: #e8b96a; font-size: .72rem; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase;
+  padding: .45rem 1rem; border-radius: 999px;
+  margin-bottom: 1.5rem;
+}
+.hero-eyebrow::before {
+  content: ''; width: 6px; height: 6px;
+  background: var(--gold); border-radius: 50%;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 800; line-height: 1.05;
+  color: #fff; letter-spacing: -.02em;
+  max-width: 760px; margin-bottom: 1.75rem;
+}
+.hero h1 em { color: #c9933a; font-style: italic; }
+.hero-sub {
+  color: rgba(255,255,255,.65); font-size: 1.05rem;
+  line-height: 1.75; max-width: 480px; margin-bottom: 2.25rem;
+}
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+.btn-cta {
+  display: inline-flex; align-items: center; gap: .5rem;
+  background: var(--gold); color: #fff;
+  padding: 1rem 2.1rem; border-radius: 12px;
+  font-weight: 700; font-size: .97rem; text-decoration: none;
+  box-shadow: 0 4px 20px rgba(201,147,58,.4);
+  transition: background .2s, transform .2s, box-shadow .2s;
+}
+.btn-cta:hover { background: #b5832d; transform: translateY(-2px); box-shadow: 0 10px 30px rgba(201,147,58,.5); }
+.btn-call {
+  display: inline-flex; align-items: center; gap: .6rem;
+  color: rgba(255,255,255,.8); font-size: .93rem; font-weight: 500;
+  text-decoration: none; transition: color .2s;
+}
+.btn-call:hover { color: #fff; }
+.btn-call svg { opacity: .7; }
+
+/* Scroll hint */
+.scroll-hint {
+  position: absolute; bottom: 1.75rem; right: 2rem; z-index: 2;
+  display: flex; flex-direction: column; align-items: center; gap: .4rem;
+  color: rgba(255,255,255,.35); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase;
+}
+.scroll-line {
+  width: 1px; height: 48px;
+  background: linear-gradient(to bottom, rgba(255,255,255,.3), transparent);
+  animation: scrollPulse 2s ease infinite;
+}
+@keyframes scrollPulse { 0%,100%{opacity:.4} 50%{opacity:1} }
+
+/* ── REVIEW STRIP ── */
+.review-strip {
+  background: var(--navy);
+  padding: 2.5rem 0;
+  overflow: hidden;
+}
+.review-track {
+  display: flex; gap: 1.25rem;
+  animation: marquee 28s linear infinite;
+  width: max-content;
+}
+.review-track:hover { animation-play-state: paused; }
+@keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+.review-card {
+  flex-shrink: 0; width: 280px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 16px; padding: 1.25rem 1.4rem;
+}
+.review-stars { color: #c9933a; font-size: .85rem; letter-spacing: .05em; margin-bottom: .6rem; }
+.review-text { font-size: .83rem; color: rgba(255,255,255,.72); line-height: 1.6; margin-bottom: .75rem; }
+.review-author { font-size: .75rem; color: rgba(255,255,255,.38); font-weight: 500; letter-spacing: .04em; text-transform: uppercase; }
+
+/* ── SERVICE SHOWCASE ── */
+.showcase { padding: 6rem 0; background: #fff; }
+.showcase-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1.25rem;
+}
+.showcase-card {
+  position: relative; border-radius: 20px; overflow: hidden;
+  text-decoration: none; display: block;
+  background: #000;
+}
+.showcase-card img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform .6s ease, filter .4s ease;
+  filter: brightness(.75);
+}
+.showcase-card:hover img { transform: scale(1.06); filter: brightness(.6); }
+.showcase-card.tall { grid-row: span 2; }
+.showcase-card.tall img { height: 520px; }
+.showcase-card:not(.tall) img { height: 245px; }
+.showcase-label {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 1.5rem 1.6rem 1.4rem;
+  background: linear-gradient(transparent, rgba(7,10,20,.85));
+}
+.showcase-label .tag {
+  font-size: .68rem; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; color: #c9933a; margin-bottom: .4rem; display: block;
+}
+.showcase-label h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem; font-weight: 700; color: #fff; line-height: 1.2;
+}
+.showcase-label .arrow {
+  display: inline-flex; align-items: center; gap: .35rem;
+  font-size: .8rem; color: rgba(255,255,255,.55); margin-top: .5rem;
+  transition: color .2s, gap .2s;
+}
+.showcase-card:hover .arrow { color: #c9933a; gap: .55rem; }
+
+/* ── WHY A2Z ── */
+.why { background: #f8fafc; padding: 6rem 0; }
+.why-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 5rem; align-items: center;
+}
+.why-img {
+  position: relative; border-radius: 24px; overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0,0,0,.12);
+}
+.why-img img { width: 100%; height: 520px; object-fit: cover; display: block; }
+.why-img-badge {
+  position: absolute; bottom: 1.5rem; right: 1.5rem;
+  background: var(--navy); color: #fff;
+  border-radius: 16px; padding: 1.1rem 1.4rem;
+  border: 1px solid rgba(255,255,255,.1);
+  box-shadow: 0 12px 32px rgba(0,0,0,.3);
+  text-align: center; min-width: 110px;
+}
+.why-img-badge .big { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: var(--gold); line-height: 1; }
+.why-img-badge .small { font-size: .72rem; color: rgba(255,255,255,.45); margin-top: .3rem; text-transform: uppercase; letter-spacing: .07em; }
+
+.pill {
+  display: inline-flex; align-items: center; gap: .5rem;
+  background: rgba(201,147,58,.1); border: 1px solid rgba(201,147,58,.25);
+  color: var(--gold); font-size: .72rem; font-weight: 600;
+  letter-spacing: .12em; text-transform: uppercase;
+  padding: .4rem .9rem; border-radius: 999px; margin-bottom: 1.25rem;
+}
+
+.differentiator {
+  display: flex; gap: 1.25rem; align-items: flex-start;
+  padding: 1.4rem 0; border-bottom: 1px solid #e8ecf2;
+}
+.differentiator:last-child { border-bottom: none; }
+.diff-icon {
+  width: 44px; height: 44px; flex-shrink: 0; border-radius: 12px;
+  background: rgba(201,147,58,.1); border: 1px solid rgba(201,147,58,.25);
+  display: flex; align-items: center; justify-content: center; color: var(--gold);
+}
+.diff-title { font-weight: 600; font-size: .97rem; color: var(--navy); margin-bottom: .3rem; }
+.diff-desc { font-size: .88rem; color: #475569; line-height: 1.65; }
+
+/* ── BEFORE/AFTER ── */
+.ba-section { background: var(--navy); padding: 6rem 0; overflow: hidden; }
+.ba-slider {
+  position: relative; border-radius: 20px; overflow: hidden;
+  cursor: col-resize; user-select: none;
+  box-shadow: 0 24px 60px rgba(0,0,0,.5);
+}
+.ba-after, .ba-before {
+  width: 100%; height: 420px; object-fit: cover; display: block;
+}
+.ba-before-wrap {
+  position: absolute; inset: 0; overflow: hidden;
+  width: 50%;
+  transition: width .0s;
+}
+.ba-before-wrap img { height: 420px; width: auto; min-width: 100%; }
+.ba-divider {
+  position: absolute; top: 0; bottom: 0; width: 3px;
+  background: #fff; left: 50%; transform: translateX(-50%);
+  cursor: col-resize;
+  box-shadow: 0 0 16px rgba(0,0,0,.4);
+}
+.ba-handle {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px; height: 44px; border-radius: 50%;
+  background: #fff; box-shadow: 0 4px 16px rgba(0,0,0,.35);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--navy); font-size: .75rem; font-weight: 700;
+  letter-spacing: .03em; gap: 2px;
+}
+.ba-label {
+  position: absolute; top: 1.25rem;
+  background: rgba(0,0,0,.55); color: #fff;
+  font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+  padding: .35rem .85rem; border-radius: 999px;
+  backdrop-filter: blur(4px);
+}
+.ba-label.after-lbl { left: 1.25rem; }
+.ba-label.before-lbl { right: 1.25rem; }
+
+/* ── PROCESS ── */
+.process { background: #fff; padding: 6rem 0; }
+.process-steps {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 0; position: relative;
+}
+.process-steps::before {
+  content: '';
+  position: absolute; top: 28px; left: 16.6%; right: 16.6%; height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+}
+.step { text-align: center; padding: 0 2rem; position: relative; }
+.step-num {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: var(--navy); border: 2px solid rgba(201,147,58,.4);
+  color: var(--gold); font-family: 'Playfair Display', serif;
+  font-size: 1.4rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 1.5rem; position: relative; z-index: 1;
+}
+.step h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--navy); margin-bottom: .6rem; }
+.step p { font-size: .88rem; color: #475569; line-height: 1.7; }
+
+/* ── CTA BANNER ── */
+.cta-banner {
+  position: relative; overflow: hidden;
+  background: var(--navy2);
+  padding: 6rem 1.5rem; text-align: center;
+}
+.cta-banner::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: url("images/image_2.webp");
+  background-size: cover; background-position: center;
+  opacity: .12;
+}
+.cta-banner > * { position: relative; z-index: 1; }
+
+/* Responsive */
+@media (max-width: 960px) {
+  .showcase-grid { grid-template-columns: 1fr 1fr; }
+  .showcase-card.tall { grid-row: span 1; }
+  .showcase-card.tall img, .showcase-card:not(.tall) img { height: 240px; }
+  .why-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .why-img img { height: 340px; }
+  .process-steps::before { display: none; }
+}
+@media (max-width: 640px) {
+  .hero h1 { font-size: 2.6rem; }
+  .showcase-grid { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr; gap: 2rem; }
+  .ba-after, .ba-before-wrap img, .ba-before { height: 260px; }
+}
+</style>
+<meta property="og:title" content="A2Z Detailing | Victoria BC — Auto Detailing, House Cleaning & Pressure Washing">
+<meta property="og:description" content="Professional auto detailing, house cleaning, move-out cleaning, and pressure washing services across Victoria BC, Langford, Sidney, Duncan and surrounding areas.">
+<meta property="og:image" content="https://a2zdetailing.ca/og-image.jpg">
+<meta property="og:url" content="https://a2zdetailing.ca/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A2Z Detailing | Victoria BC — Auto Detailing, House Cleaning & Pressure Washing">
+<meta name="twitter:description" content="Professional auto detailing, house cleaning, move-out cleaning, and pressure washing services across Victoria BC, Langford, Sidney, Duncan and surrounding areas.">
+<meta name="twitter:image" content="https://a2zdetailing.ca/og-image.jpg">
+</head>
+
+<script>
+async function loadComponent(id, file) {
+  const res = await fetch(file);
+  const html = await res.text();
+  document.getElementById(id).innerHTML = html;
+  if (window.feather) feather.replace();
+}
+loadComponent("header", "/components/header.html");
+loadComponent("footer", "/components/footer.html");
+</script>
+
+<body>
+<div id="header"></div>
+<main>
+
+
+<!-- ════════════════════════════════════════
+     CINEMATIC HERO
+════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Victoria BC · Greater Victoria Area</div>
+
+    <h1 class="pf">
+      Spotless Vehicles.<br>
+      Immaculate Homes.<br>
+      <em>Guaranteed.</em>
+    </h1>
+
+    <p class="hero-sub">
+      A2Z Detailing brings professional auto detailing, residential cleaning, and exterior pressure washing to your door — across Greater Victoria.
+    </p>
+
+    <div class="hero-actions">
+      <a href="/contact.html" class="btn-cta">Get a Free Quote</a>
+      <a href="tel:(250)891-7075" class="btn-call">
+        <i data-feather="phone" style="width:16px;height:16px;"></i>
+        (250) 891-7075
+      </a>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     SCROLLING REVIEW STRIP
+════════════════════════════════════════ -->
+<div class="review-strip">
+  <div style="max-width:1200px;margin:0 auto 1.5rem;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;">
+    <div style="display:flex;align-items:center;gap:.85rem;">
+      <div style="font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:700;color:#c9933a;line-height:1;">5.0</div>
+      <div>
+        <div style="color:#c9933a;font-size:1rem;letter-spacing:.1em;">★★★★★</div>
+        <div style="font-size:.72rem;color:rgba(255,255,255,.4);margin-top:.2rem;letter-spacing:.06em;text-transform:uppercase;">Google Rating · 100+ Reviews</div>
+      </div>
+    </div>
+    <div style="font-size:.75rem;color:rgba(255,255,255,.3);letter-spacing:.06em;text-transform:uppercase;">What Our Customers Say</div>
+  </div>
+
+  <div style="overflow:hidden;">
+    <div class="review-track" id="reviewTrack">
+      <!-- Reviews duplicated for seamless loop -->
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Absolutely incredible job on my BMW. The paint looks better than when I bought it. Will never go anywhere else."</p><div class="review-author">— James T., Victoria BC</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Used them for a move-out clean — landlord was blown away. Got my full deposit back, no questions asked."</p><div class="review-author">— Sarah M., Langford BC</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Same-day pressure washing on my driveway and patio. The before and after is unreal. Highly recommend."</p><div class="review-author">— David K., Saanich BC</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Professional, on time, and incredibly thorough. My SUV interior looks brand new. Worth every penny."</p><div class="review-author">— Michelle R., Oak Bay BC</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Ceramic coating done beautifully. They took time to explain every step. Really trustworthy team."</p><div class="review-author">— Tom B., Sidney BC</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Move-in clean was spotless. Arrived early, finished fast, left the place better than we expected."</p><div class="review-author">— Priya S., Colwood BC</div></div>
+      <!-- Duplicate for loop -->
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Absolutely incredible job on my BMW. The paint looks better than when I bought it. Will never go anywhere else."</p><div class="review-author">— James T., Victoria BC</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Used them for a move-out clean — landlord was blown away. Got my full deposit back, no questions asked."</p><div class="review-author">— Sarah M., Langford BC</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Same-day pressure washing on my driveway and patio. The before and after is unreal. Highly recommend."</p><div class="review-author">— David K., Saanich BC</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Professional, on time, and incredibly thorough. My SUV interior looks brand new. Worth every penny."</p><div class="review-author">— Michelle R., Oak Bay BC</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Ceramic coating done beautifully. They took time to explain every step. Really trustworthy team."</p><div class="review-author">— Tom B., Sidney BC</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Move-in clean was spotless. Arrived early, finished fast, left the place better than we expected."</p><div class="review-author">— Priya S., Colwood BC</div></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     SERVICE SHOWCASE (Visual grid)
+════════════════════════════════════════ -->
+<section class="showcase">
+  <div style="max-width:1200px;margin:0 auto;padding:0 1.5rem;">
+
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:2.5rem;flex-wrap:wrap;gap:1rem;">
+      <div>
+        <div class="pill">Our Services</div>
+        <h2 class="pf" style="font-size:clamp(2rem,3.5vw,2.8rem);font-weight:700;color:var(--navy);line-height:1.15;">
+          Professional Cleaning Services<br>Across Greater Victoria
+        </h2>
+      </div>
+      <a href="/services.html" style="display:inline-flex;align-items:center;gap:.5rem;font-size:.88rem;font-weight:600;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(201,147,58,.35);padding-bottom:2px;transition:border-color .2s;" onmouseover="this.style.borderColor='#c9933a'" onmouseout="this.style.borderColor='rgba(201,147,58,.35)'">
+        View all services <i data-feather="arrow-right" style="width:15px;height:15px;"></i>
+      </a>
+    </div>
+
+    <div class="showcase-grid">
+
+      <!-- Tall card: Auto Detailing -->
+      <a href="/services.html#auto" class="showcase-card">
+        <img src="images/image_1 (2).webp" alt="Professional auto detailing in Victoria BC">
+        <div class="showcase-label">
+          <span class="tag">Auto Detailing</span>
+          <h3>Interior & Exterior<br>Vehicle Detailing</h3>
+          <span class="arrow">Explore <i data-feather="arrow-right" style="width:13px;height:13px;display:inline;"></i></span>
+        </div>
+      </a>
+
+      <!-- House Cleaning -->
+      <a href="services.html#house" class="showcase-card">
+        <img src="images/a2z556.webp" alt="Professional house cleaning service in Victoria BC">
+        <div class="showcase-label">
+          <span class="tag">Residential</span>
+          <h3>Move-In, Move-Out<br>&amp; Deep Cleaning</h3>
+          <span class="arrow">Explore <i data-feather="arrow-right" style="width:13px;height:13px;display:inline;"></i></span>
+        </div>
+      </a>
+
+      <!-- Pressure Washing -->
+      <a href="/services.html#exterior" class="showcase-card">
+        <img src="images/a2z542.webp" alt="Pressure washing service Victoria BC">
+        <div class="showcase-label">
+          <span class="tag">Exterior</span>
+          <h3>Pressure Washing<br>&amp; Moss Removal</h3>
+          <span class="arrow">Explore <i data-feather="arrow-right" style="width:13px;height:13px;display:inline;"></i></span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     WHY A2Z — differentiators
+════════════════════════════════════════ -->
+<section class="why">
+  <div style="max-width:1200px;margin:0 auto;padding:0 1.5rem;">
+    <div class="why-grid">
+
+      <!-- Image side -->
+      <div class="why-img">
+        <img src="images/a2z438.webp" alt="A2Z Detailing mobile service van in Victoria BC">
+        <div class="why-img-badge">
+          <div class="big">100+</div>
+          <div class="small">Happy Customers</div>
+        </div>
+      </div>
+
+      <!-- Text side -->
+      <div>
+        <div class="pill">Why Choose A2Z</div>
+        <h2 class="pf" style="font-size:clamp(1.9rem,3vw,2.6rem);font-weight:700;color:var(--navy);line-height:1.15;margin-bottom:.75rem;">
+          Victoria's Most Trusted<br>Cleaning Professionals
+        </h2>
+        <p style="color:#475569;font-size:.95rem;line-height:1.8;margin-bottom:2rem;">
+          We're a local Victoria team — not a franchise. Every job is done by our own trained staff, using professional-grade products, with your satisfaction guaranteed.
+        </p>
+
+        <div>
+          <div class="differentiator">
+            <div class="diff-icon"><i data-feather="map-pin" style="width:18px;height:18px;"></i></div>
+            <div>
+              <div class="diff-title">Locally Owned &amp; Operated</div>
+              <div class="diff-desc">Born in Victoria, we know this community. No call centres, no subcontractors — you deal directly with our team.</div>
+            </div>
+          </div>
+          <div class="differentiator">
+            <div class="diff-icon"><i data-feather="clock" style="width:18px;height:18px;"></i></div>
+            <div>
+              <div class="diff-title">Same-Day Availability</div>
+              <div class="diff-desc">Need it done today? We offer flexible same-day scheduling across Greater Victoria, Langford and Duncan.</div>
+            </div>
+          </div>
+          <div class="differentiator">
+            <div class="diff-icon"><i data-feather="shield" style="width:18px;height:18px;"></i></div>
+            <div>
+              <div class="diff-title">Satisfaction Guaranteed</div>
+              <div class="diff-desc">Not happy? We come back and make it right — no arguments, no hassle. That's our promise on every job.</div>
+            </div>
+          </div>
+          <div class="differentiator">
+            <div class="diff-icon"><i data-feather="star" style="width:18px;height:18px;"></i></div>
+            <div>
+              <div class="diff-title">5-Star Rated on Google</div>
+              <div class="diff-desc">Over 100 five-star reviews from real Victoria homeowners and vehicle owners. Our reputation speaks for itself.</div>
+            </div>
+          </div>
+        </div>
+
+        <a href="/contact.html" style="display:inline-flex;align-items:center;gap:.6rem;background:var(--navy);color:#fff;padding:.95rem 2rem;border-radius:12px;font-weight:600;font-size:.93rem;text-decoration:none;margin-top:2rem;transition:background .2s,transform .2s;" onmouseover="this.style.background='#162240';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='var(--navy)';this.style.transform=''">
+          Book Your Service
+          <i data-feather="arrow-right" style="width:16px;height:16px;"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     BEFORE / AFTER SLIDER
+════════════════════════════════════════ -->
+<section class="ba-section">
+  <div style="max-width:1200px;margin:0 auto;padding:0 1.5rem;">
+
+    <div style="text-align:center;margin-bottom:3rem;">
+      <div class="pill" style="justify-content:center;">Real Results</div>
+      <h2 class="pf" style="font-size:clamp(1.9rem,3vw,2.6rem);font-weight:700;color:#fff;line-height:1.15;">
+        See the Difference
+      </h2>
+      <p style="color:rgba(255,255,255,.5);margin-top:.75rem;font-size:.93rem;">
+        Drag the slider to compare before and after.
+      </p>
+    </div>
+
+    <div class="ba-slider" id="baSlider">
+
+      <!-- AFTER IMAGE -->
+      <img class="ba-after" src="images/interior-clean.webp" alt="After interior detailing">
+
+      <!-- BEFORE IMAGE -->
+      <div class="ba-before-wrap" id="baBeforeWrap">
+        <img class="ba-before" src="images/interior-dirty.webp" alt="Before interior detailing">
+      </div>
+
+      <div class="ba-divider" id="baDivider">
+        <div class="ba-handle">
+          <i data-feather="chevron-left" style="width:13px;height:13px;"></i>
+          <i data-feather="chevron-right" style="width:13px;height:13px;"></i>
+        </div>
+      </div>
+
+      <span class="ba-label after-lbl">After</span>
+      <span class="ba-label before-lbl">Before</span>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     HOW IT WORKS
+════════════════════════════════════════ -->
+<section class="process">
+  <div style="max-width:1200px;margin:0 auto;padding:0 1.5rem;">
+
+    <div style="text-align:center;max-width:520px;margin:0 auto 4rem;">
+      <div class="pill" style="justify-content:center;">Simple Process</div>
+      <h2 class="pf" style="font-size:clamp(1.9rem,3vw,2.6rem);font-weight:700;color:var(--navy);">
+        Booked in Minutes,<br>Done Right the First Time
+      </h2>
+    </div>
+
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Request a Quote</h3>
+        <p>Tell us your vehicle or property details — we'll respond with a clear, upfront price. No surprises.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>We Come to You</h3>
+        <p>Choose a time that works — we arrive at your location across Victoria, same day if needed.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Enjoy the Results</h3>
+        <p>We leave only when you're completely satisfied. Guaranteed clean, every single time.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section style="padding:6rem 0;background:#f8fafc;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+
+    <div>
+      <div class="pill">Mobile Service</div>
+      <h2 class="pf" style="font-size:clamp(1.9rem,3vw,2.6rem);font-weight:700;color:#0a0f1e;line-height:1.15;margin-bottom:1rem;">
+        We Come To You
+      </h2>
+
+      <p style="color:#475569;font-size:.95rem;line-height:1.8;margin-bottom:1.5rem;">
+        Our fully equipped mobile detailing van brings professional cleaning services directly to your home or workplace across Victoria, Langford, Sidney, and Duncan.
+      </p>
+
+      <p style="color:#475569;font-size:.95rem;line-height:1.8;margin-bottom:2rem;">
+        No waiting, no drop-offs — we detail your vehicle or property on-site while you go about your day.
+      </p>
+
+      <a href="/contact.html" class="btn-cta">Book Mobile Service</a>
+    </div>
+
+    <div style="border-radius:20px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.15);">
+      <img src="images/a2z-van.webp" alt="A2Z Detailing mobile van in Victoria BC" style="width:100%;height:420px;object-fit:cover;">
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     FINAL CTA
+════════════════════════════════════════ -->
+<section class="cta-banner">
+  <div style="max-width:640px;margin:0 auto;">
+    <div class="pill" style="justify-content:center;margin-bottom:1.25rem;">Ready When You Are</div>
+    <h2 class="pf" style="font-size:clamp(2.2rem,4vw,3.2rem);font-weight:800;color:#fff;line-height:1.1;margin-bottom:1.25rem;">
+      Your Cleanest Vehicle.<br>
+      Your Spotless Home.<br>
+      <em style="color:#c9933a;">Starts Here.</em>
+    </h2>
+    <p style="color:rgba(255,255,255,.55);font-size:1rem;line-height:1.78;margin-bottom:2.5rem;max-width:480px;margin-left:auto;margin-right:auto;">
+      Same-day availability across Greater Victoria. Professional results backed by a satisfaction guarantee.
+    </p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="/contact.html" class="btn-cta">Get a Free Quote</a>
+      <a href="tel:(250) 891-7075" style="display:inline-flex;align-items:center;gap:.6rem;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.2);color:rgba(255,255,255,.85);padding:1rem 2rem;border-radius:12px;font-weight:500;font-size:.95rem;text-decoration:none;transition:background .2s,border-color .2s;" onmouseover="this.style.background='rgba(255,255,255,.14)';this.style.borderColor='rgba(255,255,255,.5)'" onmouseout="this.style.background='rgba(255,255,255,.08)';this.style.borderColor='rgba(255,255,255,.2)'">
+        <i data-feather="phone" style="width:16px;height:16px;"></i>
+        (250) 891-7075
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</main>
+<div id="footer"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.feather) feather.replace();
+
+  // Hero bg load
+  const bg = document.getElementById('heroBg');
+  if (bg) setTimeout(() => bg.classList.add('loaded'), 100);
+
+  // Before/After slider
+  const slider = document.getElementById('baSlider');
+  const beforeWrap = document.getElementById('baBeforeWrap');
+  const divider = document.getElementById('baDivider');
+  if (slider && beforeWrap && divider) {
+    let dragging = false;
+    const setPos = (x) => {
+      const rect = slider.getBoundingClientRect();
+      let pct = Math.max(5, Math.min(95, ((x - rect.left) / rect.width) * 100));
+      beforeWrap.style.width = pct + '%';
+      divider.style.left = pct + '%';
+    };
+    divider.addEventListener('mousedown', () => dragging = true);
+    window.addEventListener('mouseup', () => dragging = false);
+    window.addEventListener('mousemove', e => { if (dragging) setPos(e.clientX); });
+    divider.addEventListener('touchstart', e => { dragging = true; e.preventDefault(); }, {passive:false});
+    window.addEventListener('touchend', () => dragging = false);
+    window.addEventListener('touchmove', e => { if (dragging) setPos(e.touches[0].clientX); });
+  }
+});
+</script>
+
+<script>
+(function(){
+
+let scrollMarks = [25,50,75,90];
+let triggered = {};
+
+function trackScroll(){
+let scrollTop = window.scrollY;
+let docHeight = document.documentElement.scrollHeight - window.innerHeight;
+let percent = Math.round((scrollTop/docHeight)*100);
+
+scrollMarks.forEach(function(mark){
+if(percent >= mark && !triggered[mark]){
+triggered[mark] = true;
+
+if(typeof gtag === "function"){
+gtag('event','scroll_depth',{
+event_category:'engagement',
+event_label: mark + '%',
+value: mark
+});
+}
+
+}
+});
+}
+
+window.addEventListener('scroll',trackScroll);
+
+})();
+</script>
+
+<div style="position:fixed;bottom:28px;right:28px;z-index:9999;display:flex;flex-direction:column;gap:12px;">
+  <a href="tel:+12508917075" onclick="trackCallClick()" title="Call us"
+     style="display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:#c9933a;color:#fff;text-decoration:none;box-shadow:0 4px 20px rgba(0,0,0,.25);transition:transform .2s,box-shadow .2s;"
+     onmouseover="this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 24px rgba(0,0,0,.35)'"
+     onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 20px rgba(0,0,0,.25)'">
+    <i data-feather="phone" style="width:24px;height:24px;"></i>
+  </a>
+  <a href="/contact.html" onclick="trackQuoteClick()" title="Get quote"
+     style="display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:#c9933a;color:#fff;text-decoration:none;box-shadow:0 4px 20px rgba(0,0,0,.25);transition:transform .2s,box-shadow .2s;"
+     onmouseover="this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 24px rgba(0,0,0,.35)'"
+     onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 20px rgba(0,0,0,.25)'">
+    <i data-feather="message-square" style="width:24px;height:24px;"></i>
+  </a>
+</div>
+
+</body>
+</html>

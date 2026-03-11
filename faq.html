@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FAQ | A2Z Detailing Victoria BC</title>
+<meta name="description" content="Frequently asked questions about auto detailing, house cleaning and pressure washing services in Victoria BC.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+* { box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: #fff; color: #0f172a; overflow-x: hidden; }
+.pf { font-family: 'Playfair Display', Georgia, serif; }
+:root { --gold: #c9933a; --navy: #0a0f1e; --border: #e8ecf0; }
+.pill { display:inline-flex;align-items:center;gap:.4rem;background:rgba(201,147,58,.1);border:1px solid rgba(201,147,58,.25);color:var(--gold);font-size:.7rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;padding:.35rem .9rem;border-radius:999px; }
+
+/* FAQ accordion */
+.faq-item { border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:border-color .2s,box-shadow .2s; }
+.faq-item.open { border-color:var(--gold);box-shadow:0 4px 20px rgba(201,147,58,.12); }
+.faq-btn {
+  width:100%;display:flex;align-items:center;justify-content:space-between;
+  padding:1.25rem 1.5rem;background:#fff;cursor:pointer;border:none;
+  font-family:'Inter',sans-serif;font-size:.95rem;font-weight:600;color:var(--navy);
+  text-align:left;gap:1rem;transition:background .15s;
+}
+.faq-btn:hover { background:#fafbfc; }
+.faq-icon { width:32px;height:32px;border-radius:8px;background:#f1f5f9;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#64748b;transition:background .2s,color .2s,border-color .2s; }
+.faq-item.open .faq-icon { background:rgba(201,147,58,.1);border-color:rgba(201,147,58,.3);color:var(--gold); }
+.faq-body { display:none;padding:0 1.5rem 1.4rem;font-size:.9rem;color:#475569;line-height:1.8; }
+.faq-item.open .faq-body { display:block; }
+.faq-category { font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#94a3b8;margin-bottom:1rem;margin-top:2.5rem; }
+.faq-category:first-child { margin-top:0; }
+
+.btn-gold { display:inline-flex;align-items:center;gap:.5rem;background:var(--gold);color:#fff;padding:.85rem 1.9rem;border-radius:12px;font-weight:700;font-size:.9rem;text-decoration:none;box-shadow:0 4px 16px rgba(201,147,58,.35);transition:background .2s,transform .2s; }
+.btn-gold:hover { background:#b5832d;transform:translateY(-2px); }
+</style>
+</head>
+<body>
+<div id="header"></div>
+<main>
+
+<!-- PAGE BAR -->
+<div style="background:#f8fafc;border-bottom:1px solid #e8ecf0;padding:2.25rem 0;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 1.5rem;">
+    <div style="font-size:.77rem;color:#94a3b8;display:flex;align-items:center;gap:.4rem;margin-bottom:.6rem;">
+      <a href="index.html" style="color:#94a3b8;text-decoration:none;" onmouseover="this.style.color='#0a0f1e'" onmouseout="this.style.color='#94a3b8'">Home</a>
+      <span style="color:#cbd5e1;">/</span>
+      <span style="color:#475569;">FAQ</span>
+    </div>
+    <h1 class="pf" style="font-size:clamp(1.9rem,3.5vw,2.6rem);font-weight:700;color:var(--navy);line-height:1.1;">Frequently Asked Questions</h1>
+    <p style="color:#64748b;font-size:.93rem;margin-top:.4rem;max-width:520px;">Everything you need to know about booking, scheduling and what to expect from A2Z Detailing.</p>
+  </div>
+</div>
+
+<!-- FAQ BODY -->
+<div style="max-width:1200px;margin:0 auto;padding:4rem 1.5rem;display:grid;grid-template-columns:1fr 320px;gap:3.5rem;align-items:start;">
+
+  <!-- LEFT: QUESTIONS -->
+  <div>
+
+    <div class="faq-category">Booking &amp; Scheduling</div>
+
+    <div style="display:flex;flex-direction:column;gap:.75rem;">
+
+      <div class="faq-item open">
+        <button class="faq-btn">
+          <span>How do I request a quote?</span>
+          <div class="faq-icon"><i data-feather="chevron-down" style="width:15px;height:15px;"></i></div>
+        </button>
+        <div class="faq-body">
+          You can call us directly at <a href="tel:+12508917075" style="color:var(--gold);font-weight:600;">(250) 891-7075</a> or submit a request through our <a href="contact.html" style="color:var(--gold);font-weight:600;">contact form</a>. We typically respond within a few hours and offer same-day availability across Greater Victoria.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn">
+          <span>Do you offer same-day service?</span>
+          <div class="faq-icon"><i data-feather="chevron-down" style="width:15px;height:15px;"></i></div>
+        </button>
+        <div class="faq-body">
+          Yes — same-day bookings are available across Greater Victoria, Langford and Duncan, subject to schedule availability. Call us directly for the fastest response on same-day requests.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn">
+          <span>How do I pay for the service?</span>
+          <div class="faq-icon"><i data-feather="chevron-down" style="width:15px;height:15px;"></i></div>
+        </button>
+        <div class="faq-body">
+          We accept e-transfer, cash and most major payment methods. Payment is collected after the service is completed to your satisfaction.
+        </div>
+      </div>
+
+    </div>
+
+    <div class="faq-category">Auto Detailing</div>
+
+    <div style="display:flex;flex-direction:column;gap:.75rem;">
+
+      <div class="faq-item">
+        <button class="faq-btn">
+          <span>How long does a detailing service take?</span>
+          <div class="faq-icon"><i data-feather="chevron-down" style="width:15px;height:15px;"></i></div>
+        </button>
+        <div class="faq-body">
+          Most detailing services take between 2–5 hours depending on vehicle size, condition and the package selected. A full interior + exterior detail on a large SUV may take up to 6 hours. We'll give you a time estimate when you book.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn">
+          <span>Do you come to my home or workplace?</span>
+          <div class="faq-icon"><i data-feather="chevron-down" style="width:15px;height:15px;"></i></div>
+        </button>
+        <div class="faq-body">
+          Yes — A2Z Detailing is a fully mobile service. We bring all equipment and supplies directly to your location across Victoria, Langford, Duncan and surrounding communities.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn">
+          <span>Do I need to provide water or electricity?</span>
+          <div class="faq-icon"><i data-feather="chevron-down" style="width:15px;height:15px;"></i></div>
+        </button>
+        <div class="faq-body">
+          In most cases we can work with available water and power access at your location. If you have limited access, just mention it when booking and we'll plan accordingly.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn">
+          <span>What is ceramic coating and how long does it last?</span>
+          <div class="faq-icon"><i data-feather="chevron-down" style="width:15px;height:15px;"></i></div>
+        </button>
+        <div class="faq-body">
+          Ceramic coating is a liquid polymer that bonds to your vehicle's paint, creating a hard, hydrophobic protective layer. It repels water, dirt and UV rays. A professional-grade ceramic coating from A2Z lasts 2–5 years depending on maintenance and driving conditions.
+        </div>
+      </div>
+
+    </div>
+
+    <div class="faq-category">House Cleaning</div>
+
+    <div style="display:flex;flex-direction:column;gap:.75rem;">
+
+      <div class="faq-item">
+        <button class="faq-btn">
+          <span>What's included in a move-out clean?</span>
+          <div class="faq-icon"><i data-feather="chevron-down" style="width:15px;height:15px;"></i></div>
+        </button>
+        <div class="faq-body">
+          Our move-out clean covers every room thoroughly — kitchen (appliances, cupboards, counters), bathrooms (scrubbed and disinfected), all floors, skirting boards, window sills, and spot-cleaning of walls. We follow standard tenancy deposit checklists to help you get your full deposit back.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn">
+          <span>Do you bring your own supplies and equipment?</span>
+          <div class="faq-icon"><i data-feather="chevron-down" style="width:15px;height:15px;"></i></div>
+        </button>
+        <div class="faq-body">
+          Yes — we bring all cleaning supplies, equipment and products. You don't need to provide anything. We use professional-grade, eco-friendly cleaning products safe for your home and family.
+        </div>
+      </div>
+
+    </div>
+
+    <div class="faq-category">Service Areas</div>
+
+    <div style="display:flex;flex-direction:column;gap:.75rem;">
+
+      <div class="faq-item">
+        <button class="faq-btn">
+          <span>What areas do you serve?</span>
+          <div class="faq-icon"><i data-feather="chevron-down" style="width:15px;height:15px;"></i></div>
+        </button>
+        <div class="faq-body">
+          We serve all of Greater Victoria including Victoria, Saanich, Oak Bay, Esquimalt, Colwood, View Royal, and Sidney — plus Langford, Westshore communities, and Duncan/Cowichan Valley. No travel fees within our coverage area.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- RIGHT: SIDEBAR -->
+  <div style="position:sticky;top:100px;">
+    <!-- Quick contact card -->
+    <div style="background:var(--navy);border-radius:20px;padding:1.75rem;margin-bottom:1.25rem;">
+      <div class="pf" style="font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:.6rem;">Still have questions?</div>
+      <p style="font-size:.85rem;color:rgba(255,255,255,.5);line-height:1.65;margin-bottom:1.5rem;">Call or message us directly — we're happy to help you pick the right service.</p>
+      <a href="tel:+12508917075" style="display:flex;align-items:center;justify-content:center;gap:.5rem;background:var(--gold);color:#fff;padding:.8rem;border-radius:10px;font-size:.88rem;font-weight:700;text-decoration:none;margin-bottom:.65rem;transition:background .2s;" onmouseover="this.style.background='#b5832d'" onmouseout="this.style.background='var(--gold)'">
+        <i data-feather="phone" style="width:14px;height:14px;"></i> (250) 891-7075
+      </a>
+      <a href="contact.html" style="display:flex;align-items:center;justify-content:center;gap:.5rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.8);padding:.8rem;border-radius:10px;font-size:.88rem;font-weight:500;text-decoration:none;transition:background .2s;" onmouseover="this.style.background='rgba(255,255,255,.14)'" onmouseout="this.style.background='rgba(255,255,255,.08)'">
+        <i data-feather="send" style="width:14px;height:14px;"></i> Send a Message
+      </a>
+    </div>
+    <!-- Service areas -->
+    <div style="background:#f8fafc;border:1px solid #e8ecf0;border-radius:20px;padding:1.5rem;">
+      <div style="font-size:.68rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#94a3b8;margin-bottom:1rem;">Service Areas</div>
+      <div style="display:flex;flex-wrap:wrap;gap:.5rem;">
+        <span style="background:#fff;border:1px solid #e8ecf0;color:#475569;font-size:.8rem;padding:.35rem .75rem;border-radius:8px;">Victoria</span>
+        <span style="background:#fff;border:1px solid #e8ecf0;color:#475569;font-size:.8rem;padding:.35rem .75rem;border-radius:8px;">Langford</span>
+        <span style="background:#fff;border:1px solid #e8ecf0;color:#475569;font-size:.8rem;padding:.35rem .75rem;border-radius:8px;">Duncan</span>
+        <span style="background:#fff;border:1px solid #e8ecf0;color:#475569;font-size:.8rem;padding:.35rem .75rem;border-radius:8px;">Saanich</span>
+        <span style="background:#fff;border:1px solid #e8ecf0;color:#475569;font-size:.8rem;padding:.35rem .75rem;border-radius:8px;">Sidney</span>
+        <span style="background:#fff;border:1px solid #e8ecf0;color:#475569;font-size:.8rem;padding:.35rem .75rem;border-radius:8px;">Colwood</span>
+        <span style="background:#fff;border:1px solid #e8ecf0;color:#475569;font-size:.8rem;padding:.35rem .75rem;border-radius:8px;">Oak Bay</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- CTA -->
+<section style="background:var(--navy);padding:5rem 0;text-align:center;position:relative;overflow:hidden;">
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:400px;background:radial-gradient(circle,rgba(201,147,58,.1) 0%,transparent 70%);pointer-events:none;"></div>
+  <div style="max-width:520px;margin:0 auto;padding:0 1.5rem;position:relative;z-index:1;">
+    <h2 class="pf" style="font-size:clamp(1.8rem,3vw,2.3rem);font-weight:700;color:#fff;margin-bottom:.85rem;">Ready to Book?</h2>
+    <p style="color:rgba(255,255,255,.5);font-size:.93rem;margin-bottom:2rem;line-height:1.75;">Same-day availability. Professional results. Satisfaction guaranteed.</p>
+    <a href="contact.html" class="btn-gold">Get a Free Quote</a>
+  </div>
+</section>
+
+</main>
+<div id="footer"></div>
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+  const [h, f] = await Promise.all([fetch("components/header.html"), fetch("components/footer.html")]);
+  document.getElementById("header").innerHTML = await h.text();
+  document.getElementById("footer").innerHTML = await f.text();
+  feather.replace();
+
+  // Accordion
+  document.querySelectorAll(".faq-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const item = btn.closest(".faq-item");
+      const wasOpen = item.classList.contains("open");
+      document.querySelectorAll(".faq-item").forEach(i => i.classList.remove("open"));
+      if (!wasOpen) item.classList.add("open");
+    });
+  });
+});
+</script>
+</body>
+</html>

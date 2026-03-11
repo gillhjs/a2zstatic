@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% block title %}{{ service.title }} | Pinewood Electrical Automation{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="services-hero">
+  <div class="container">
+    <div class="page-label">Specialized Service</div>
+    <h1>{{ service.title }}</h1>
+    <p>{{ service.description }}</p>
+    <div class="services-hero-trust">
+      <span>Code-Compliant Installation</span>
+      <span>Engineered System Design</span>
+      <span>Commissioning & Support</span>
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW GRID -->
+<section class="services-intro">
+  <div class="container">
+    <div class="services-intro-grid">
+
+      <div>
+        <span class="section-label">Service Overview</span>
+        <h2>Why This Service Matters</h2>
+        <p>
+          Operational disruptions, outdated infrastructure, and inefficient
+          control systems can lead to costly downtime and safety risks.
+          Our {{ service.title|lower }} solutions are engineered to improve
+          reliability, increase efficiency, and ensure your systems operate
+          at peak performance.
+        </p>
+      </div>
+
+      <div class="services-highlights">
+        <ul>
+          <li>Scope: Commercial &amp; Industrial Facilities</li>
+          <li>Approach: Engineered System Design</li>
+          <li>Compliance: Code-Compliant Installation</li>
+          <li>Documentation: Structured &amp; Included</li>
+          <li>Support: Commissioning &amp; Ongoing Optimization</li>
+        </ul>
+        <div style="margin-top:2rem;">
+          <a href="{% url 'contact' %}" class="btn-primary" style="width:100%; text-align:center; display:block;">
+            Start Your Project
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE DELIVER -->
+<section class="services-list">
+  <div class="container">
+    <span class="section-label" style="display:block; text-align:center; margin-bottom:0.75rem;">Deliverables</span>
+    <h2>What We Deliver</h2>
+    <div class="services-grid-pro">
+
+      <div class="service-card-pro">
+        <h3>System Design &amp; Engineering</h3>
+        <p>Detailed technical planning, load analysis, schematics, and architecture tailored to your operational requirements.</p>
+      </div>
+
+      <div class="service-card-pro">
+        <h3>Professional Implementation</h3>
+        <p>Structured installation and integration performed with strict safety compliance and minimal disruption.</p>
+      </div>
+
+      <div class="service-card-pro">
+        <h3>Testing &amp; Commissioning</h3>
+        <p>Validation, performance testing, and optimization to ensure long-term reliability and efficiency.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ENGINEERING PROCESS -->
+<section class="services-process">
+  <div class="container">
+    <span class="section-label" style="display:block; text-align:center; margin-bottom:0.75rem;">How We Work</span>
+    <h2>Our Engineering Process</h2>
+    <div>
+      <div>
+        <h4>01</h4>
+        <p><strong>Assessment &amp; Evaluation</strong><br>
+        On-site evaluation, system review, and operational analysis to define clear technical objectives.</p>
+      </div>
+      <div>
+        <h4>02</h4>
+        <p><strong>Custom System Design</strong><br>
+        Structured engineering and documentation tailored to performance and scalability requirements.</p>
+      </div>
+      <div>
+        <h4>03</h4>
+        <p><strong>Installation &amp; Integration</strong><br>
+        Professional execution with structured integration into existing systems and workflows.</p>
+      </div>
+      <div>
+        <h4>04</h4>
+        <p><strong>Commissioning &amp; Optimization</strong><br>
+        Testing, validation, and performance refinement to ensure reliable long-term operation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="section section-soft">
+  <div class="container" style="max-width:900px; text-align:center;">
+    <span class="section-label" style="display:block; margin-bottom:0.75rem;">Who We Serve</span>
+    <h2>Industries We Support</h2>
+    <p>
+      Our {{ service.title|lower }} services are delivered across
+      manufacturing facilities, distribution centers, commercial properties,
+      and institutional environments requiring structured and dependable systems.
+    </p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="services-cta">
+  <div class="container" style="max-width:800px; text-align:center;">
+    <h2 style="color:white;">Let's Engineer a More Reliable System for Your Facility</h2>
+    <p>
+      Speak with our team to discuss your project requirements.
+      We deliver structured, performance-driven electrical and automation solutions.
+    </p>
+    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:2rem;">
+      <a href="{% url 'contact' %}" class="btn-primary">Schedule Consultation</a>
+      <a href="{% url 'services' %}" class="btn-secondary">View All Services</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
