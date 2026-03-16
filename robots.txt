@@ -1,0 +1,12 @@
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Prevent indexing of thank you page
+Disallow: /thanks.html
+
+# Crawl delay to be nice to servers
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://a2zdetailing.ca/sitemap.xml
