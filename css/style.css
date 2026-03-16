@@ -1,0 +1,835 @@
+/* --------------------------------------------------
+   DESIGN SYSTEM — A2Z Detailing
+   Font: Cormorant Garamond (premium serif display) + Inter (body)
+   Palette: Deep navy, warm white, electric amber accent
+-------------------------------------------------- */
+
+/* Cormorant Garamond — high-contrast elegant serif for headings */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+
+
+
+
+:root {
+  --navy:        #0a0f1e;
+  --navy-mid:    #111827;
+  --navy-soft:   #1a2540;
+  --navy-border: #1e2d4a;
+
+  --amber:       #f59e0b;
+  --amber-light: #fcd34d;
+  --amber-glow:  rgba(245,158,11,.18);
+
+  --white:       #ffffff;
+  --off-white:   #f9fafb;
+  --slate-100:   #f1f5f9;
+  --slate-200:   #e2e8f0;
+  --slate-400:   #94a3b8;
+  --slate-500:   #64748b;
+  --slate-600:   #475569;
+  --slate-700:   #334155;
+  --slate-800:   #1e293b;
+  --slate-900:   #0f172a;
+
+  --radius-sm:   10px;
+  --radius-md:   16px;
+  --radius-lg:   24px;
+  --radius-xl:   32px;
+
+  --shadow-card:  0 2px 16px rgba(0,0,0,.06), 0 1px 4px rgba(0,0,0,.04);
+  --shadow-hover: 0 20px 50px rgba(0,0,0,.12), 0 8px 20px rgba(0,0,0,.07);
+  --shadow-dark:  0 24px 60px rgba(0,0,0,.35);
+
+  --transition: .25s cubic-bezier(.4,0,.2,1);
+}
+
+
+/* --------------------------------------------------
+   RESET & BASE
+-------------------------------------------------- */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--slate-800);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+
+/* --------------------------------------------------
+   TYPOGRAPHY
+-------------------------------------------------- */
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+}
+
+h1 { font-size: clamp(2.4rem, 5vw, 4rem); }
+h2 { font-size: clamp(1.9rem, 3.5vw, 2.8rem); }
+h3 { font-size: 1.35rem; font-weight: 600; }
+h4 { font-size: 1.1rem; font-weight: 600; }
+
+p {
+  color: var(--slate-600);
+  line-height: 1.75;
+}
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white p,
+.on-dark h1,
+.on-dark h2,
+.on-dark h3,
+.on-dark p {
+  color: inherit;
+}
+
+.label {
+  font-family: 'Inter', sans-serif;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+
+/* --------------------------------------------------
+   SECTION LAYOUT — no more overlaps
+-------------------------------------------------- */
+
+section {
+  position: relative;
+  /* Remove the global animation that was causing overlap issues */
+}
+
+.section-pad {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.section-pad-lg {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Legacy Tailwind-style aliases still used in HTML */
+.section-lg {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.section-md {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--slate-200), transparent);
+  margin: 3rem auto;
+  max-width: 900px;
+}
+
+
+/* --------------------------------------------------
+   BACKGROUNDS
+-------------------------------------------------- */
+
+.bg-navy        { background: var(--navy); color: var(--white); }
+.bg-navy-mid    { background: var(--navy-mid); color: var(--white); }
+.bg-off-white   { background: var(--off-white); }
+.bg-slate-50    { background: var(--slate-100) !important; }
+
+.accent-gradient {
+  background: linear-gradient(135deg, var(--navy) 0%, #0e1a35 50%, #162240 100%);
+  color: var(--white);
+}
+
+/* Subtle noise texture overlay for hero areas */
+.accent-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+.accent-gradient > * { position: relative; z-index: 1; }
+
+
+/* --------------------------------------------------
+   AMBER ACCENT DECORATION
+-------------------------------------------------- */
+
+.amber-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--amber);
+  border-radius: 50%;
+  margin-right: .4rem;
+  vertical-align: middle;
+}
+
+.amber-line {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--amber);
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+
+/* --------------------------------------------------
+   CARD SYSTEM
+-------------------------------------------------- */
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--slate-200);
+  padding: 2rem;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  box-shadow: var(--shadow-card);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: transparent;
+}
+
+.card-dark {
+  background: var(--navy-soft);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.card-dark:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0,0,0,.4);
+}
+
+.service-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--slate-200);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--amber);
+}
+
+.service-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform .6s ease;
+  display: block;
+}
+
+.service-card:hover img {
+  transform: scale(1.06);
+}
+
+.service-card-body {
+  padding: 1.5rem;
+}
+
+
+/* --------------------------------------------------
+   ICON BOX
+-------------------------------------------------- */
+
+.icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  background: var(--navy);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-box-amber {
+  background: var(--amber-glow);
+  border: 1px solid rgba(245,158,11,.3);
+  color: var(--amber);
+}
+
+
+/* --------------------------------------------------
+   BUTTON SYSTEM
+-------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .85rem 1.75rem;
+  border-radius: var(--radius-md);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: .95rem;
+  letter-spacing: .01em;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition), color var(--transition);
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--amber);
+  color: var(--navy);
+  box-shadow: 0 4px 20px rgba(245,158,11,.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,.25), transparent);
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.btn-primary:hover {
+  background: var(--amber-light);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(245,158,11,.4);
+}
+
+.btn-primary:hover::after { opacity: 1; }
+
+.btn-secondary {
+  background: transparent;
+  color: var(--white);
+  border: 1.5px solid rgba(255,255,255,.35);
+}
+
+.btn-secondary:hover {
+  background: rgba(255,255,255,.08);
+  border-color: rgba(255,255,255,.7);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--navy);
+  border: 1.5px solid var(--slate-200);
+}
+
+.btn-outline:hover {
+  background: var(--slate-100);
+  border-color: var(--slate-300);
+  transform: translateY(-2px);
+}
+
+.btn-dark {
+  background: var(--navy);
+  color: var(--white);
+  box-shadow: 0 4px 20px rgba(0,0,0,.2);
+}
+
+.btn-dark:hover {
+  background: var(--navy-soft);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+
+
+
+/* --------------------------------------------------
+   NAVIGATION
+-------------------------------------------------- */
+
+nav a {
+  position: relative;
+  font-weight: 500;
+  transition: color var(--transition);
+  text-decoration: none;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--amber);
+  border-radius: 1px;
+  transition: width var(--transition);
+}
+
+nav a:hover::after { width: 100%; }
+
+
+/* --------------------------------------------------
+   STATS ROW
+-------------------------------------------------- */
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: .85rem;
+  color: rgba(255,255,255,.55);
+  margin-top: .35rem;
+}
+
+
+/* --------------------------------------------------
+   PROCESS STEPS
+-------------------------------------------------- */
+
+.step-number {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--amber);
+  opacity: .9;
+  line-height: 1;
+}
+
+
+/* --------------------------------------------------
+   IMAGES
+-------------------------------------------------- */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-cover {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.rounded-img {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+/* Remove the hover scale from global img — only apply where intended */
+.image-hover img {
+  transition: transform .6s ease;
+}
+
+.image-hover {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  position: relative;
+}
+
+.image-hover:hover img {
+  transform: scale(1.06);
+}
+
+.image-hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.3));
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.image-hover:hover::after { opacity: 1; }
+
+
+/* --------------------------------------------------
+   FLOATING CTA
+-------------------------------------------------- */
+
+.floating-cta {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  background: var(--amber);
+  color: var(--navy);
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .9rem;
+  box-shadow: 0 10px 32px rgba(245,158,11,.45);
+  transition: transform var(--transition), box-shadow var(--transition);
+  z-index: 100;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.floating-cta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 44px rgba(245,158,11,.55);
+}
+
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+
+footer {
+  background: var(--navy);
+  color: var(--slate-400);
+}
+
+footer a {
+  color: var(--slate-400);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+footer a:hover { color: var(--white); }
+
+
+/* --------------------------------------------------
+   SCROLL REVEAL
+-------------------------------------------------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity .7s cubic-bezier(.2,.65,.3,1), transform .7s cubic-bezier(.2,.65,.3,1);
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* --------------------------------------------------
+   SHADOW UTILITIES
+-------------------------------------------------- */
+
+.shadow-soft { box-shadow: var(--shadow-card); }
+
+
+/* --------------------------------------------------
+   FEATHER ICONS
+-------------------------------------------------- */
+
+.feather { stroke-width: 1.8; }
+
+
+/* --------------------------------------------------
+   SECTION ANGLE — FIXED (no more overlap)
+   Uses padding instead of negative margins
+-------------------------------------------------- */
+
+.section-angle {
+  position: relative;
+  padding: 5rem 0;
+  z-index: 0;
+}
+
+.section-angle-dark {
+  position: relative;
+  padding: 5rem 0;
+  background: var(--navy-mid);
+  z-index: 0;
+}
+
+/* Remove the ::before pseudo-element that was causing overlaps */
+
+
+/* --------------------------------------------------
+   HERO FLOATING BADGE
+-------------------------------------------------- */
+
+.hero-badge {
+  background: var(--white);
+  color: var(--slate-900);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  box-shadow: 0 16px 40px rgba(0,0,0,.25);
+  position: absolute;
+  bottom: -1.5rem;
+  left: -1.5rem;
+}
+
+.hero-badge p:first-child {
+  font-size: .78rem;
+  color: var(--slate-500);
+}
+
+.hero-badge p:last-child {
+  font-weight: 700;
+  color: var(--navy);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+
+/* --------------------------------------------------
+   SECTION HEADING HELPER
+-------------------------------------------------- */
+
+.section-heading {
+  text-align: center;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.5rem;
+}
+
+.section-heading .label {
+  display: block;
+  margin-bottom: .75rem;
+}
+
+.section-heading h2 {
+  margin-bottom: 1rem;
+}
+
+.section-heading p {
+  font-size: 1.05rem;
+}
+
+
+/* --------------------------------------------------
+   LOCATION CARDS
+-------------------------------------------------- */
+
+.location-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--slate-200);
+  background: var(--white);
+  display: block;
+  text-decoration: none;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  box-shadow: var(--shadow-card);
+}
+
+.location-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--amber);
+}
+
+.location-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform .6s ease;
+  display: block;
+}
+
+.location-card:hover img { transform: scale(1.05); }
+
+.location-card-body {
+  padding: 1.25rem 1.5rem;
+}
+
+.location-card-body h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: .4rem;
+}
+
+.location-card-body p {
+  font-size: .88rem;
+  color: var(--slate-500);
+  margin-bottom: .75rem;
+}
+
+.location-card-body .arrow-link {
+  font-size: .88rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+
+/* --------------------------------------------------
+   CTA SECTION
+-------------------------------------------------- */
+
+.cta-section {
+  background: var(--navy);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.cta-section h2 { color: var(--white); }
+.cta-section p { color: rgba(255,255,255,.6); margin-top: .75rem; font-size: 1.05rem; }
+
+
+/* --------------------------------------------------
+   RESPONSIVE
+-------------------------------------------------- */
+
+@media (max-width: 768px) {
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.75rem; }
+
+  .section-pad,
+  .section-lg { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+  .section-pad-lg { padding-top: 4.5rem; padding-bottom: 4.5rem; }
+
+  .hero-badge { display: none; }
+
+  .floating-cta { bottom: 20px; right: 16px; padding: 12px 18px; }
+}
+
+@media (max-width: 480px) {
+  .section-heading { margin-bottom: 2.5rem; }
+}
+
+/* Page Enter Animation */
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+main {
+  animation: pageEnter 0.4s ease-out;
+}
+
+/* Stagger animations for multiple elements */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: slideInUp 0.6s ease-out forwards;
+}
+
+.card:nth-child(2) { animation-delay: 0.1s; }
+.card:nth-child(3) { animation-delay: 0.2s; }
+.card:nth-child(4) { animation-delay: 0.3s; }
+
+/* WHY SECTION IMAGE FIX */
+.why-img {
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* WHY SECTION IMAGE */
+.why-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.why-img {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0,0,0,.15);
+}
+
+.why-img img {
+  width: 100%;
+  height: 720px;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* ── CTA BANNER ── */
+
+.cta-banner {
+  position: relative;
+  overflow: hidden;
+  background: var(--navy2);
+  padding: 6rem 1.5rem;
+  text-align: center;
+}
+
+/* background image layer */
+.cta-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  /* your image */
+  background-image: url("images/image_2.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* subtle overlay */
+  opacity: 0.18;
+}
+
+/* keep content above image */
+.cta-banner > * {
+  position: relative;
+  z-index: 1;
+}
