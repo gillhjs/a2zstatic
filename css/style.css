@@ -833,3 +833,11 @@ main {
   position: relative;
   z-index: 1;
 }
+
+
+/* Responsive contact layout */
+@media (min-width: 900px){
+  .grid-2{
+    grid-template-columns: 1fr 420px;
+  }
+}
