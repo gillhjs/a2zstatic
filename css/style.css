@@ -835,9 +835,9 @@ main {
 }
 
 
-/* Responsive contact layout */
-@media (min-width: 900px){
+/* Fix contact layout on mobile */
+@media (max-width: 900px){
   .grid-2{
-    grid-template-columns: 1fr 420px;
+    grid-template-columns: 1fr !important;
   }
 }
