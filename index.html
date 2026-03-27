@@ -207,9 +207,13 @@ body { font-family: 'Inter', system-ui, sans-serif; background: #fff; color: #0f
   overflow: hidden;
 }
 .review-track {
-  display: flex; gap: 1.25rem;
+  display: flex;
+  gap: 1.25rem;
   animation: marquee 28s linear infinite;
   width: max-content;
+
+  flex-wrap: nowrap;        /* 🔥 FIX: prevents 2nd row */
+  align-items: stretch;     /* cleaner alignment */
 }
 .review-track:hover { animation-play-state: paused; }
 @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
@@ -482,21 +486,90 @@ loadComponent("footer", "components/footer.html");
 
   <div style="overflow:hidden;">
     <div class="review-track" id="reviewTrack">
-      <!-- Reviews duplicated for seamless loop -->
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Absolutely incredible job on my BMW. The paint looks better than when I bought it. Will never go anywhere else."</p><div class="review-author">— James T., Victoria BC</div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Used them for a move-out clean — landlord was blown away. Got my full deposit back, no questions asked."</p><div class="review-author">— Sarah M., Langford BC</div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Same-day pressure washing on my driveway and patio. The before and after is unreal. Highly recommend."</p><div class="review-author">— David K., Saanich BC</div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Professional, on time, and incredibly thorough. My SUV interior looks brand new. Worth every penny."</p><div class="review-author">— Michelle R., Oak Bay BC</div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Ceramic coating done beautifully. They took time to explain every step. Really trustworthy team."</p><div class="review-author">— Tom B., Sidney BC</div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Move-in clean was spotless. Arrived early, finished fast, left the place better than we expected."</p><div class="review-author">— Priya S., Colwood BC</div></div>
-      <!-- Duplicate for loop -->
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Absolutely incredible job on my BMW. The paint looks better than when I bought it. Will never go anywhere else."</p><div class="review-author">— James T., Victoria BC</div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Used them for a move-out clean — landlord was blown away. Got my full deposit back, no questions asked."</p><div class="review-author">— Sarah M., Langford BC</div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Same-day pressure washing on my driveway and patio. The before and after is unreal. Highly recommend."</p><div class="review-author">— David K., Saanich BC</div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Professional, on time, and incredibly thorough. My SUV interior looks brand new. Worth every penny."</p><div class="review-author">— Michelle R., Oak Bay BC</div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Ceramic coating done beautifully. They took time to explain every step. Really trustworthy team."</p><div class="review-author">— Tom B., Sidney BC</div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Move-in clean was spotless. Arrived early, finished fast, left the place better than we expected."</p><div class="review-author">— Priya S., Colwood BC</div></div>
-    </div>
+
+  <div class="review-card">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">
+      “Booked interior detailing for my SUV and it honestly looks brand new. They came right to my driveway in Victoria.”
+    </p>
+    <div class="review-author">— Daniel R., Victoria BC</div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">
+      “Super professional and easy to deal with. Got my car detailed at my workplace in Langford — very convenient.”
+    </p>
+    <div class="review-author">— Priya S., Langford BC</div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">
+      “They removed pet hair and stains I thought would never come out. Best detailing service I’ve used in Saanich.”
+    </p>
+    <div class="review-author">— Kevin M., Saanich BC</div>
+  </div>
+
+  <!-- 🔥 Punjabi family review -->
+  <div class="review-card">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">
+      “We have kids so our van gets messy fast. They cleaned everything perfectly — even food stains were gone. Very respectful and hardworking team.”
+    </p>
+    <div class="review-author">— Gurpreet S., Surrey BC</div>
+  </div>
+
+  <!-- 🔥 Punjabi family review -->
+  <div class="review-card">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">
+      “Booked full interior cleaning for our family SUV. Amazing job — looks fresh and smells clean. Will definitely call again.”
+    </p>
+    <div class="review-author">— Manpreet K., Victoria BC</div>
+  </div>
+
+  <!-- 🔥 Punjabi family review -->
+  <div class="review-card">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">
+      “Very honest guys. Did detailing for our two cars at home. No rush, proper work. Highly recommend to anyone in Victoria.”
+    </p>
+    <div class="review-author">— Harjit B., Langford BC</div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">
+      “Got ceramic coating done and the finish is amazing. They explained everything clearly and didn’t rush the job.”
+    </p>
+    <div class="review-author">— Jason L., Sidney BC</div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">
+      “Same-day booking and they actually showed up on time. Pressure washing and car detail both turned out great.”
+    </p>
+    <div class="review-author">— Chris D., Esquimalt BC</div>
+  </div>
+
+  <!-- 🔁 DUPLICATE FOR SMOOTH LOOP -->
+  <!-- copy same reviews again -->
+
+  <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">“Booked interior detailing for my SUV and it honestly looks brand new. They came right to my driveway in Victoria.”</p><div class="review-author">— Daniel R., Victoria BC</div></div>
+
+  <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">“Super professional and easy to deal with. Got my car detailed at my workplace in Langford — very convenient.”</p><div class="review-author">— Priya S., Langford BC</div></div>
+
+  <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">“They removed pet hair and stains I thought would never come out. Best detailing service I’ve used in Saanich.”</p><div class="review-author">— Kevin M., Saanich BC</div></div>
+
+  <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">“We have kids so our van gets messy fast. They cleaned everything perfectly — even food stains were gone.”</p><div class="review-author">— Gurpreet S., Surrey BC</div></div>
+
+  <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">“Booked full interior cleaning for our family SUV. Amazing job — looks fresh and smells clean.”</p><div class="review-author">— Manpreet K., Victoria BC</div></div>
+
+  <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">“Very honest guys. Did detailing for our two cars at home. Proper work.”</p><div class="review-author">— Harjit B., Langford BC</div></div>
+
+</div>
   </div>
 </div>
 
