@@ -80,7 +80,7 @@ body { font-family: 'Inter', sans-serif; background: #fff; color: #0f172a; overf
 </div>
 
 <!-- FAQ BODY -->
-<div style="max-width:1200px;margin:0 auto;padding:4rem 1.5rem;display:grid;grid-template-columns:1fr 320px;gap:3.5rem;align-items:start;">
+<div class="faq-layout">
 
   <!-- LEFT: QUESTIONS -->
   <div>
@@ -212,7 +212,7 @@ body { font-family: 'Inter', sans-serif; background: #fff; color: #0f172a; overf
   </div>
 
   <!-- RIGHT: SIDEBAR -->
-  <div style="position:sticky;top:100px;">
+  <div class="faq-sidebar">
     <!-- Quick contact card -->
     <div style="background:var(--navy);border-radius:20px;padding:1.75rem;margin-bottom:1.25rem;">
       <div class="pf" style="font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:.6rem;">Still have questions?</div>
@@ -263,11 +263,22 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Accordion
   document.querySelectorAll(".faq-btn").forEach(btn => {
     btn.addEventListener("click", () => {
-      const item = btn.closest(".faq-item");
-      const wasOpen = item.classList.contains("open");
-      document.querySelectorAll(".faq-item").forEach(i => i.classList.remove("open"));
-      if (!wasOpen) item.classList.add("open");
-    });
+  const item = btn.closest(".faq-item");
+  const icon = btn.querySelector("i");
+
+  const wasOpen = item.classList.contains("open");
+
+  document.querySelectorAll(".faq-item").forEach(i => {
+    i.classList.remove("open");
+    const ic = i.querySelector("i");
+    if (ic) ic.style.transform = "rotate(0deg)";
+  });
+
+  if (!wasOpen) {
+    item.classList.add("open");
+    if (icon) icon.style.transform = "rotate(180deg)";
+  }
+});
   });
 });
 </script>
