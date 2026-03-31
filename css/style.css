@@ -1024,3 +1024,15 @@ main {
   font-size: .9rem;
   color: var(--slate-600);
 }
+
+.svc-row { display:grid;grid-template-columns:1fr 1fr;gap:1.1rem; }
+
+@media (max-width: 768px) {
+  .svc-row { grid-template-columns:1fr; }
+}
+
+@media (max-width: 768px) {
+  .svc-row {
+    grid-template-columns: 1fr !important;
+  }
+}
