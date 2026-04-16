@@ -1,97 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- MAIN PAGES -->
-  <url>
-    <loc>https://a2zdetailing.ca/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://a2zdetailing.ca/services.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://a2zdetailing.ca/gallery.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://a2zdetailing.ca/contact.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://a2zdetailing.ca/about.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://a2zdetailing.ca/faq.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+  <!-- Core Pages -->
+  <url><loc>https://a2zdetailing.ca/</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://a2zdetailing.ca/services.html</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a2zdetailing.ca/pricing.html</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a2zdetailing.ca/gallery.html</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a2zdetailing.ca/fleet.html</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a2zdetailing.ca/about.html</loc><lastmod>2026-04-15</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a2zdetailing.ca/faq.html</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a2zdetailing.ca/contact.html</loc><lastmod>2026-04-15</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
 
-  <!-- LOCATION PAGES -->
-  <url>
-    <loc>https://a2zdetailing.ca/locations/detailing_victoria.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://a2zdetailing.ca/locations/detailing_langford.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://a2zdetailing.ca/locations/detailing_saanich.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://a2zdetailing.ca/locations/detailing_sidney.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://a2zdetailing.ca/locations/detailing_esquimalt.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://a2zdetailing.ca/locations/detailing_colwood.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://a2zdetailing.ca/locations/detailing_oakbay.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://a2zdetailing.ca/locations/detailing_duncan.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
+  <!-- Blog -->
+  <url><loc>https://a2zdetailing.ca/blog/</loc><lastmod>2026-04-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a2zdetailing.ca/blog/ceramic-coating-worth-it-victoria-bc.html</loc><lastmod>2026-04-15</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a2zdetailing.ca/blog/how-often-detail-car-victoria.html</loc><lastmod>2026-04-15</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a2zdetailing.ca/blog/roof-moss-victoria-bc.html</loc><lastmod>2026-04-15</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a2zdetailing.ca/blog/move-out-cleaning-victoria-bc.html</loc><lastmod>2026-04-15</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
 
-  <!-- thanks.html intentionally excluded (noindex) -->
+  <!-- Location Pages -->
+  <url><loc>https://a2zdetailing.ca/locations/detailing_victoria.html</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://a2zdetailing.ca/locations/detailing_langford.html</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a2zdetailing.ca/locations/detailing_saanich.html</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a2zdetailing.ca/locations/detailing_sidney.html</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://a2zdetailing.ca/locations/detailing_esquimalt.html</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://a2zdetailing.ca/locations/detailing_colwood.html</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://a2zdetailing.ca/locations/detailing_oakbay.html</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://a2zdetailing.ca/locations/detailing_duncan.html</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
 </urlset>

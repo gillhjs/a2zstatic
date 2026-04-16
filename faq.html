@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://a2zdetailing.ca/faq.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="/icon-192x192.png">
@@ -40,9 +40,29 @@
 </script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D20DRXVPK0"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D20DRXVPK0');</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D20DRXVPK0',{
+    'send_page_view':true,
+    'cookie_flags':'SameSite=None;Secure',
+    'custom_map':{'dimension1':'page_type','dimension2':'service_category'}
+  });</script>
 <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","vwwo7p21lp");</script>
 <script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/site.js" defer></script>
+  <!-- ═══ SEO & SOCIAL UNIVERSAL ═══ -->
+  <meta name="author" content="A2Z Detailing">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0a0f1e">
+  <meta name="geo.region" content="CA-BC">
+  <meta name="geo.placename" content="Langford, British Columbia">
+  <meta name="geo.position" content="48.4502;-123.5043">
+  <meta name="ICBM" content="48.4502, -123.5043">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="A2Z Detailing Victoria BC">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="/icon-192x192.png">
 </head>
 <body>
 <div id="header"></div>
@@ -56,7 +76,7 @@
       <span>/</span>
       <span style="color:var(--text-body);">FAQ</span>
     </nav>
-    <h1 class="pf" style="font-size:clamp(1.9rem,3.5vw,2.6rem);font-weight:700;color:var(--navy);line-height:1.1;">Frequently Asked Questions</h1>
+    <h1 class="serif" style="font-size:clamp(1.9rem,3.5vw,2.6rem);font-weight:700;color:var(--navy);line-height:1.1;">Frequently Asked Questions</h1>
     <p style="color:var(--text-muted);font-size:.93rem;margin-top:.4rem;max-width:520px;">Everything you need to know about booking, scheduling and what to expect from A2Z Detailing.</p>
   </div>
 </div>
@@ -66,7 +86,7 @@
 
   <!-- LEFT: QUESTIONS -->
   <div>
-    <div class="faq-category">Booking &amp; Scheduling</div>
+    <h3 class="faq-category">Booking &amp; Scheduling</h3>
     <div style="display:flex;flex-direction:column;gap:.75rem;">
 
       <div class="faq-item open">
@@ -111,7 +131,7 @@
 
     </div>
 
-    <div class="faq-category">Auto Detailing</div>
+    <h3 class="faq-category">Auto Detailing</h3>
     <div style="display:flex;flex-direction:column;gap:.75rem;">
 
       <div class="faq-item">
@@ -156,7 +176,7 @@
 
     </div>
 
-    <div class="faq-category">House Cleaning</div>
+    <h3 class="faq-category">House Cleaning</h3>
     <div style="display:flex;flex-direction:column;gap:.75rem;">
 
       <div class="faq-item">
@@ -181,7 +201,7 @@
 
     </div>
 
-    <div class="faq-category">Pressure Washing</div>
+    <h3 class="faq-category">Pressure Washing</h3>
     <div style="display:flex;flex-direction:column;gap:.75rem;">
 
       <div class="faq-item">
@@ -210,10 +230,10 @@
   <!-- RIGHT SIDEBAR -->
   <aside class="faq-sidebar">
     <div style="background:var(--navy);border-radius:var(--radius-lg);padding:1.75rem;margin-bottom:1.5rem;">
-      <div class="pf" style="font-size:1.15rem;font-weight:700;color:#fff;margin-bottom:.5rem;">Still have questions?</div>
+      <div class="serif" style="font-size:1.15rem;font-weight:700;color:#fff;margin-bottom:.5rem;">Still have questions?</div>
       <p style="font-size:.85rem;color:rgba(255,255,255,.5);margin-bottom:1.5rem;line-height:1.65;">We're happy to answer anything before you book.</p>
-      <a href="/contact.html" class="btn-cta" style="display:block;text-align:center;width:100%;">Get a Free Quote</a>
-      <a href="tel:+12508917075" onclick="trackCallClick()" style="display:flex;align-items:center;justify-content:center;gap:.4rem;margin-top:.75rem;font-size:.85rem;color:rgba(255,255,255,.5);transition:color .2s;" onmouseover="this.style.color='#c9933a'" onmouseout="this.style.color='rgba(255,255,255,.5)'">
+      <a href="/contact.html" class="btn btn-gold" style="display:block;text-align:center;width:100%;">Get a Free Quote</a>
+      <a href="tel:+12508917075" onclick="trackCallClick()" style="display:flex;align-items:center;justify-content:center;gap:.4rem;margin-top:.75rem;font-size:.85rem;color:rgba(255,255,255,.5);transition:color .2s;">
         <i data-feather="phone" style="width:14px;height:14px;"></i> (250) 891-7075
       </a>
     </div>
@@ -235,6 +255,14 @@
 
 </div>
 
+
+<!-- CROSS LINKS -->
+<section style="background:var(--off-white);padding:3rem 0;border-top:1px solid var(--border);">
+  <div style="max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;flex-wrap:wrap;gap:.85rem;align-items:center;justify-content:center;">
+    <a href="/services.html" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:.7rem 1.4rem;font-size:.85rem;font-weight:600;color:var(--navy);text-decoration:none;transition:border-color .2s,transform .2s;" class="hover-border">⚡ All Services</a> <a href="/pricing.html" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:.7rem 1.4rem;font-size:.85rem;font-weight:600;color:var(--navy);text-decoration:none;transition:border-color .2s,transform .2s;" class="hover-border">💳 Pricing & Membership</a> <a href="/contact.html" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:.7rem 1.4rem;font-size:.85rem;font-weight:600;color:var(--navy);text-decoration:none;transition:border-color .2s,transform .2s;" class="hover-border">📬 Get a Quote</a> <a href="/blog/" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:.7rem 1.4rem;font-size:.85rem;font-weight:600;color:var(--navy);text-decoration:none;transition:border-color .2s,transform .2s;" class="hover-border">📖 Car Care Blog</a>
+    <a href="/contact.html" style="background:var(--gold);color:#fff;border-radius:10px;padding:.7rem 1.4rem;font-size:.85rem;font-weight:700;text-decoration:none;box-shadow:0 4px 12px rgba(201,147,58,.3);">Get a Free Quote →</a>
+  </div>
+</section>
 </main>
 <div id="footer"></div>
 
@@ -248,14 +276,9 @@
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", async () => {
-  const [h, f] = await Promise.all([
-    fetch("/components/header.html"),
-    fetch("/components/footer.html")
-  ]);
-  document.getElementById("header").innerHTML = await h.text();
-  document.getElementById("footer").innerHTML = await f.text();
-  if (window.feather) feather.replace();
+document.addEventListener("DOMContentLoaded", () => {
+  // Components loaded by /js/site.js automatically
+  // Page-specific init below:
 
   document.querySelectorAll(".faq-btn").forEach(btn => {
     btn.addEventListener("click", () => {

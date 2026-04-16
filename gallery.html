@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://a2zdetailing.ca/gallery.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="/icon-192x192.png">
@@ -23,9 +23,44 @@
 <meta name="twitter:description" content="Real before and after results from auto detailing, house cleaning and pressure washing in Victoria BC.">
 <meta name="twitter:image" content="https://a2zdetailing.ca/images/image_collage_1.webp">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D20DRXVPK0"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D20DRXVPK0');</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D20DRXVPK0',{
+    'send_page_view':true,
+    'cookie_flags':'SameSite=None;Secure',
+    'custom_map':{'dimension1':'page_type','dimension2':'service_category'}
+  });</script>
 <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","vwwo7p21lp");</script>
 <script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/site.js" defer></script>
+  <!-- ═══ SEO & SOCIAL UNIVERSAL ═══ -->
+  <meta name="author" content="A2Z Detailing">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0a0f1e">
+  <meta name="geo.region" content="CA-BC">
+  <meta name="geo.placename" content="Langford, British Columbia">
+  <meta name="geo.position" content="48.4502;-123.5043">
+  <meta name="ICBM" content="48.4502, -123.5043">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="A2Z Detailing Victoria BC">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="/icon-192x192.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": "A2Z Detailing Gallery | Before & After Victoria BC",
+  "description": "Photo gallery of auto detailing, house cleaning, and pressure washing results from A2Z Detailing in Victoria BC.",
+  "url": "https://a2zdetailing.ca/gallery.html",
+  "author": {
+    "@type": "LocalBusiness",
+    "name": "A2Z Detailing",
+    "url": "https://a2zdetailing.ca"
+  }
+}
+</script>
 </head>
 <body>
 <div id="header"></div>
@@ -41,10 +76,10 @@
     </nav>
     <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
       <div>
-        <h1 class="pf" style="font-size:clamp(1.9rem,3.5vw,2.6rem);font-weight:700;color:var(--navy);line-height:1.1;">Our Work</h1>
+        <h1 class="serif" style="font-size:clamp(1.9rem,3.5vw,2.6rem);font-weight:700;color:var(--navy);line-height:1.1;">Our Work</h1>
         <p style="color:var(--text-muted);font-size:.93rem;margin-top:.4rem;">Real results — auto detailing, house cleaning &amp; pressure washing</p>
       </div>
-      <a href="/contact.html" onclick="trackQuoteClick()" class="btn-cta">
+      <a href="/contact.html" onclick="trackQuoteClick()" class="btn btn-gold">
         Book a Service
       </a>
     </div>
@@ -57,9 +92,9 @@
     <!-- Filter tabs -->
     <div style="display:flex;gap:.65rem;flex-wrap:wrap;margin-bottom:2.5rem;" role="group" aria-label="Filter gallery by category">
       <button class="filter-tab active" data-filter="all">All Work</button>
-      <button class="filter-tab" data-filter="auto">Auto Detailing</button>
-      <button class="filter-tab" data-filter="house">House Cleaning</button>
-      <button class="filter-tab" data-filter="exterior">Exterior Washing</button>
+      <button class="filter-tab" data-filter="auto" aria-pressed="false">Auto Detailing</button>
+      <button class="filter-tab" data-filter="house" aria-pressed="false">House Cleaning</button>
+      <button class="filter-tab" data-filter="exterior" aria-pressed="false">Exterior Washing</button>
     </div>
 
     <!-- Gallery grid -->
@@ -161,13 +196,21 @@
     <!-- CTA after gallery -->
     <div style="text-align:center;margin-top:3rem;padding:2.5rem;background:var(--off-white);border-radius:var(--radius-lg);border:1px solid var(--border);">
       <div class="pill" style="justify-content:center;margin-bottom:.75rem;">Ready to book?</div>
-      <h2 class="pf" style="font-size:1.6rem;font-weight:700;color:var(--navy);margin-bottom:.6rem;">Want Results Like These?</h2>
+      <h2 class="serif" style="font-size:1.6rem;font-weight:700;color:var(--navy);margin-bottom:.6rem;">Want Results Like These?</h2>
       <p style="color:var(--text-body);font-size:.93rem;margin-bottom:1.5rem;">Get in touch for a free quote — same-day available across Greater Victoria.</p>
-      <a href="/contact.html" onclick="trackQuoteClick()" class="btn-cta">Get a Free Quote</a>
+      <a href="/contact.html" onclick="trackQuoteClick()" class="btn btn-gold">Get a Free Quote</a>
     </div>
   </div>
 </section>
 
+
+<!-- CROSS LINKS -->
+<section style="background:var(--off-white);padding:3rem 0;border-top:1px solid var(--border);">
+  <div style="max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;flex-wrap:wrap;gap:.85rem;align-items:center;justify-content:center;">
+    <a href="/services.html" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:.7rem 1.4rem;font-size:.85rem;font-weight:600;color:var(--navy);text-decoration:none;transition:border-color .2s,transform .2s;" class="hover-border">⚡ All Services</a> <a href="/pricing.html" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:.7rem 1.4rem;font-size:.85rem;font-weight:600;color:var(--navy);text-decoration:none;transition:border-color .2s,transform .2s;" class="hover-border">💳 Pricing & Membership</a> <a href="/contact.html" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:.7rem 1.4rem;font-size:.85rem;font-weight:600;color:var(--navy);text-decoration:none;transition:border-color .2s,transform .2s;" class="hover-border">📬 Get a Quote</a>
+    <a href="/contact.html" style="background:var(--gold);color:#fff;border-radius:10px;padding:.7rem 1.4rem;font-size:.85rem;font-weight:700;text-decoration:none;box-shadow:0 4px 12px rgba(201,147,58,.3);">Get a Free Quote →</a>
+  </div>
+</section>
 </main>
 <div id="footer"></div>
 
@@ -195,14 +238,9 @@
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", async () => {
-  const [h, f] = await Promise.all([
-    fetch("/components/header.html"),
-    fetch("/components/footer.html")
-  ]);
-  document.getElementById("header").innerHTML = await h.text();
-  document.getElementById("footer").innerHTML = await f.text();
-  if (window.feather) feather.replace();
+document.addEventListener("DOMContentLoaded", () => {
+  // Components loaded by /js/site.js automatically
+  // Page-specific init below:
 
   // Filter
   document.querySelectorAll(".filter-tab").forEach(tab => {

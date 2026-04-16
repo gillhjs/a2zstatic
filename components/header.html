@@ -1,163 +1,108 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css">
+<!-- Header component v3 — scripts live in /js/site.js -->
+<div id="scrollBar"></div>
+<div id="cursorDot"></div>
+<div id="cursorRing"></div>
 
 <!-- TOP BAR -->
-<div class="top-bar" style="background:#070c18;color:rgba(255,255,255,.5);font-size:.73rem;font-family:'Inter',sans-serif;">
-  <div style="max-width:1200px;margin:0 auto;padding:.55rem 1.5rem;display:flex;align-items:center;justify-content:space-between;">
-    <div style="display:flex;align-items:center;gap:1.5rem;">
-      <span style="display:flex;align-items:center;gap:.4rem;">
-        <i data-feather="map-pin" style="width:12px;height:12px;"></i>
+<div class="top-bar">
+  <div style="max-width:1200px;margin:0 auto;padding:.5rem 2rem;display:flex;align-items:center;justify-content:space-between;">
+    <div style="display:flex;align-items:center;gap:1.75rem;">
+      <span style="display:flex;align-items:center;gap:.45rem;">
+        <i data-feather="map-pin" style="width:11px;height:11px;color:var(--gold);"></i>
         Greater Victoria BC
       </span>
-      <span class="hide-mobile" style="display:flex;align-items:center;gap:.4rem;">
-        <i data-feather="clock" style="width:12px;height:12px;"></i>
+      <span style="display:flex;align-items:center;gap:.45rem;">
+        <i data-feather="clock" style="width:11px;height:11px;color:var(--gold);"></i>
         Mon–Sat 8am–6pm · Same-day available
       </span>
     </div>
-    <div style="display:flex;align-items:center;gap:1.5rem;">
-      <a href="tel:+12508917075" onclick="trackCallClick()" style="display:flex;align-items:center;gap:.4rem;color:rgba(255,255,255,.5);transition:color .2s;" class="top-bar-link">
-        <i data-feather="phone" style="width:12px;height:12px;"></i>
+    <div style="display:flex;align-items:center;gap:1.75rem;">
+      <a href="tel:+12508917075" onclick="trackCallClick()" style="display:flex;align-items:center;gap:.4rem;">
+        <i data-feather="phone" style="width:11px;height:11px;"></i>
         (250) 891-7075
       </a>
-      <a href="/contact.html" style="color:rgba(255,255,255,.5);transition:color .2s;" class="top-bar-link">Request Quote</a>
+      <a href="/contact.html" style="color:rgba(255,255,255,.4);">Request Quote</a>
     </div>
   </div>
 </div>
 
 <!-- MAIN HEADER -->
-<header id="siteHeader" style="position:sticky;top:0;z-index:5000;background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid #e8ecf0;font-family:'Inter',sans-serif;transition:box-shadow .3s;">
-  <div style="max-width:1200px;margin:0 auto;padding:.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;">
+<header id="siteHeader" style="position:sticky;top:0;z-index:5000;background:rgba(255,255,255,.97);border-bottom:1px solid var(--border);font-family:'DM Sans',sans-serif;transition:background .35s ease,border-color .35s ease,box-shadow .35s ease,backdrop-filter .35s ease;">
+  <div style="max-width:1200px;margin:0 auto;padding:.9rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;">
 
     <!-- LOGO -->
-    <a href="/index.html" style="display:flex;align-items:center;gap:.8rem;text-decoration:none;flex-shrink:0;">
-      <div style="width:40px;height:40px;border-radius:11px;background:#0a0f1e;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-        <span style="font-family:'Playfair Display',serif;font-weight:700;font-size:.85rem;color:#c9933a;letter-spacing:.02em;">A2Z</span>
+    <a href="/index.html" style="display:flex;align-items:center;gap:.85rem;text-decoration:none;flex-shrink:0;">
+      <div style="width:42px;height:42px;border-radius:12px;background:var(--navy);display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;overflow:hidden;">
+        <span style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:.88rem;color:var(--gold);position:relative;z-index:1;">A2Z</span>
+        <div style="position:absolute;inset:0;background:conic-gradient(from 135deg,rgba(201,147,58,.15),transparent);"></div>
       </div>
-      <div class="logo-text" style="line-height:1.25;">
-        <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:1rem;color:#0a0f1e;">A2Z Detailing</div>
-        <div style="font-size:.67rem;color:#94a3b8;letter-spacing:.05em;text-transform:uppercase;">Victoria BC</div>
+      <div>
+        <div class="logo-name" style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.1rem;color:var(--navy);line-height:1.1;transition:color .35s;">A2Z Detailing</div>
+        <div class="logo-sub"  style="font-size:.65rem;color:var(--tx4);letter-spacing:.07em;text-transform:uppercase;transition:color .35s;">Victoria BC</div>
       </div>
     </a>
 
-    <nav id="desktopNav" style="display:flex;align-items:center;gap:.15rem;">
-      <a href="/index.html" class="hnav-link">Home</a>
+    <!-- DESKTOP NAV -->
+    <nav id="desktopNav" aria-label="Main navigation" style="display:flex;align-items:center;gap:.35rem;">
+      <a href="/index.html"    class="hnav-link">Home</a>
       <a href="/services.html" class="hnav-link">Services</a>
-      <a href="/gallery.html" class="hnav-link">Gallery</a>
-      <a href="/about.html" class="hnav-link">About</a>
-      <a href="/faq.html" class="hnav-link">FAQ</a>
-      <a href="/contact.html" class="hnav-link">Contact</a>
+      <a href="/pricing.html"  class="hnav-link">Pricing</a>
+      <a href="/gallery.html"  class="hnav-link">Gallery</a>
+      <a href="/blog/"         class="hnav-link">Blog</a>
+      <a href="/about.html"    class="hnav-link">About</a>
+      <a href="/faq.html"      class="hnav-link">FAQ</a>
     </nav>
 
     <!-- RIGHT ACTIONS -->
-    <div style="display:flex;align-items:center;gap:.65rem;flex-shrink:0;">
-      <a href="tel:+12508917075" onclick="trackCallClick()" id="hCallBtn" style="display:none;align-items:center;gap:.4rem;background:#c9933a;color:#fff;padding:.6rem 1rem;border-radius:10px;font-size:.85rem;font-weight:700;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,.15);">
-        <i data-feather="phone" style="width:13px;height:13px;"></i> Call Now
+    <div style="display:flex;align-items:center;gap:.75rem;flex-shrink:0;">
+      <a href="tel:+12508917075" onclick="trackCallClick()" id="hCallBtn"
+         style="display:none;align-items:center;gap:.4rem;background:var(--gold);color:#fff;padding:.65rem 1.1rem;border-radius:11px;font-size:.85rem;font-weight:700;text-decoration:none;box-shadow:var(--sh-gold);">
+        <i data-feather="phone" style="width:13px;height:13px;"></i> Call
       </a>
-      <a href="/contact.html" id="hCta" onclick="trackQuoteClick()" style="display:inline-flex;align-items:center;gap:.4rem;background:#c9933a;color:#fff;padding:.58rem 1.15rem;border-radius:9px;font-size:.82rem;font-weight:700;text-decoration:none;box-shadow:0 3px 10px rgba(201,147,58,.3);transition:background .2s;">
-        <i data-feather="send" style="width:12px;height:12px;"></i> Get Free Quote
+      <a href="/contact.html" id="hCta" onclick="trackQuoteClick()"
+         style="display:inline-flex;align-items:center;gap:.45rem;background:var(--gold);color:#fff;padding:.62rem 1.25rem;border-radius:11px;font-size:.84rem;font-weight:700;text-decoration:none;box-shadow:var(--sh-gold);transition:background .2s,transform .15s,box-shadow .2s;position:relative;overflow:hidden;">
+        <i data-feather="send" style="width:12px;height:12px;"></i> Free Quote
       </a>
-      <button id="hMenuBtn" style="display:none;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;border:1px solid #e2e8f0;background:#fff;cursor:pointer;" aria-label="Open menu">
-        <i data-feather="menu" style="width:17px;height:17px;"></i>
+      <button id="hMenuBtn" aria-label="Menu" aria-expanded="false"
+              style="display:none;align-items:center;justify-content:center;width:44px;height:44px;border-radius:11px;border:1.5px solid var(--border);background:var(--white);cursor:pointer;flex-shrink:0;">
+        <i data-feather="menu" style="width:18px;height:18px;color:var(--tx2);"></i>
       </button>
     </div>
+
   </div>
 
   <!-- MOBILE MENU -->
-  <div id="hMobileMenu" style="display:none;border-top:1px solid #e8ecf0;background:#fff;padding:.85rem 1.5rem 1.1rem;">
-    <div style="display:flex;flex-direction:column;gap:.15rem;margin-bottom:.85rem;">
-      <a href="/index.html" class="mob-link">Home</a>
+  <div id="hMobileMenu" style="display:none;border-top:1px solid var(--border);background:var(--white);padding:.9rem 1.5rem 1.4rem;">
+    <nav style="display:flex;flex-direction:column;gap:.2rem;margin-bottom:1rem;">
+      <a href="/index.html"    class="mob-link">Home</a>
       <a href="/services.html" class="mob-link">Services</a>
-      <a href="/gallery.html" class="mob-link">Gallery</a>
-      <a href="/about.html" class="mob-link">About</a>
-      <a href="/faq.html" class="mob-link">FAQ</a>
-      <a href="/contact.html" class="mob-link">Contact</a>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.65rem;">
-      <a href="tel:+12508917075" onclick="trackCallClick()" style="display:flex;align-items:center;justify-content:center;gap:.4rem;border:1px solid #e2e8f0;padding:.7rem;border-radius:9px;font-size:.84rem;font-weight:600;color:#0a0f1e;text-decoration:none;">
-        <i data-feather="phone" style="width:13px;height:13px;"></i> Call Now
+      <a href="/pricing.html"  class="mob-link">Pricing &amp; Membership</a>
+      <a href="/gallery.html"  class="mob-link">Gallery</a>
+      <a href="/blog/"         class="mob-link">Blog</a>
+      <a href="/fleet.html"    class="mob-link">Fleet Services</a>
+      <a href="/about.html"    class="mob-link">About</a>
+      <a href="/faq.html"      class="mob-link">FAQ</a>
+      <a href="/contact.html"  class="mob-link">Contact</a>
+    </nav>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem;">
+      <a href="tel:+12508917075" onclick="trackCallClick()"
+         style="display:flex;align-items:center;justify-content:center;gap:.4rem;border:1.5px solid var(--border);padding:.8rem;border-radius:11px;font-size:.85rem;font-weight:600;color:var(--tx1);text-decoration:none;">
+        <i data-feather="phone" style="width:14px;height:14px;"></i> Call
       </a>
-      <a href="/contact.html" style="display:flex;align-items:center;justify-content:center;gap:.4rem;background:#c9933a;color:#fff;padding:.7rem;border-radius:9px;font-size:.84rem;font-weight:700;text-decoration:none;">
-        <i data-feather="send" style="width:13px;height:13px;"></i> Get Quote
+      <a href="/contact.html"
+         style="display:flex;align-items:center;justify-content:center;gap:.4rem;background:var(--gold);color:#fff;padding:.8rem;border-radius:11px;font-size:.85rem;font-weight:700;text-decoration:none;">
+        <i data-feather="send" style="width:14px;height:14px;"></i> Get Quote
       </a>
     </div>
   </div>
 </header>
 
-<!-- NOSCRIPT FALLBACK NAV -->
 <noscript>
-<nav style="background:#0a0f1e;padding:.75rem 1.5rem;display:flex;gap:1.25rem;flex-wrap:wrap;">
-  <a href="/index.html" style="color:#fff;font-size:.85rem;">Home</a>
+<nav style="background:var(--navy);padding:.75rem 2rem;display:flex;gap:1.5rem;flex-wrap:wrap;">
+  <a href="/index.html"    style="color:#fff;font-size:.85rem;">Home</a>
   <a href="/services.html" style="color:#fff;font-size:.85rem;">Services</a>
-  <a href="/gallery.html" style="color:#fff;font-size:.85rem;">Gallery</a>
-  <a href="/about.html" style="color:#fff;font-size:.85rem;">About</a>
-  <a href="/faq.html" style="color:#fff;font-size:.85rem;">FAQ</a>
-  <a href="/contact.html" style="color:#fff;font-size:.85rem;">Contact</a>
-  <a href="tel:+12508917075" style="color:#c9933a;font-size:.85rem;">(250) 891-7075</a>
+  <a href="/pricing.html"  style="color:#fff;font-size:.85rem;">Pricing</a>
+  <a href="/contact.html"  style="color:#fff;font-size:.85rem;">Contact</a>
+  <a href="tel:+12508917075" style="color:var(--gold);font-size:.85rem;">(250) 891-7075</a>
 </nav>
 </noscript>
-
-<style>
-.top-bar-link:hover { color: #c9933a !important; }
-.mob-link { padding: .65rem .85rem; border-radius: 9px; font-size: .88rem; font-weight: 500; color: #334155; text-decoration: none; display: block; transition: background .15s; }
-.mob-link:hover { background: #f8fafc; }
-</style>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  if (window.feather) feather.replace();
-
-  const btn  = document.getElementById("hMenuBtn");
-  const menu = document.getElementById("hMobileMenu");
-  if (btn && menu) btn.addEventListener("click", () => {
-    const open = menu.style.display === "block";
-    menu.style.display = open ? "none" : "block";
-    btn.setAttribute("aria-expanded", String(!open));
-  });
-
-  window.addEventListener("scroll", () => {
-    const h = document.getElementById("siteHeader");
-    if (h) h.style.boxShadow = window.scrollY > 8 ? "0 4px 24px rgba(0,0,0,.09)" : "none";
-  });
-
-  // Highlight active nav link
-  document.querySelectorAll(".hnav-link").forEach(l => {
-    const path = l.getAttribute("href").replace("/","");
-    if (location.pathname === l.getAttribute("href") || (path && location.pathname.includes(path))) {
-      l.classList.add("active");
-    }
-  });
-});
-
-function trackCallClick() {
-  if (typeof gtag === "function") {
-    gtag('event','phone_click',{'event_category':'conversion','event_label':'header_phone'});
-  }
-}
-function trackQuoteClick() {
-  if (typeof gtag === "function") {
-    gtag('event','quote_click',{'event_category':'conversion','event_label':'header_quote'});
-  }
-}
-function trackContactPhone() {
-  if (typeof gtag === "function") {
-    gtag('event','phone_click',{'event_category':'conversion','event_label':'contact_page'});
-  }
-}
-function trackInstagram() {
-  if (typeof gtag === "function") {
-    gtag('event','social_click',{'event_category':'engagement','event_label':'instagram'});
-  }
-}
-function trackFacebook() {
-  if (typeof gtag === "function") {
-    gtag('event','social_click',{'event_category':'engagement','event_label':'facebook'});
-  }
-}
-function trackGallery(category) {
-  if (typeof gtag === "function") {
-    gtag('event','gallery_click',{'event_category':'gallery','event_label':category});
-  }
-}
-</script>

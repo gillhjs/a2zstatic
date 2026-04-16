@@ -1,102 +1,124 @@
 <footer>
-  <div style="max-width:1200px;margin:0 auto;padding:4rem 1.5rem 3rem;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:3rem;" class="footer-grid">
 
-    <!-- BRAND -->
-    <div>
+  <!-- MAIN FOOTER GRID -->
+  <div class="footer-grid">
+
+    <!-- BRAND (always visible, no accordion) -->
+    <div class="ft-brand">
       <a href="/index.html" style="display:flex;align-items:center;gap:.8rem;text-decoration:none;margin-bottom:1.25rem;">
         <div style="width:42px;height:42px;border-radius:11px;background:#0a0f1e;border:1px solid rgba(201,147,58,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-          <span style="font-family:'Playfair Display',serif;font-weight:700;font-size:.88rem;color:#c9933a;">A2Z</span>
+          <span style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:.88rem;color:#c9933a;">A2Z</span>
         </div>
         <div>
-          <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:1rem;color:#fff;">A2Z Detailing</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1rem;color:#fff;">A2Z Detailing</div>
           <div style="font-size:.68rem;color:rgba(255,255,255,.35);letter-spacing:.05em;text-transform:uppercase;margin-top:.15rem;">Victoria BC</div>
         </div>
       </a>
-      <p style="font-size:.84rem;color:rgba(255,255,255,.4);line-height:1.75;max-width:240px;margin-bottom:1.5rem;">
-        Professional auto detailing, house cleaning and exterior washing across Greater Victoria BC.
+      <p style="font-size:.84rem;color:rgba(255,255,255,.4);line-height:1.75;max-width:240px;margin-bottom:1.25rem;">
+        Mobile auto detailing, house cleaning and exterior washing across Greater Victoria BC.
       </p>
-      <div style="display:flex;gap:.6rem;">
-        <a href="https://www.facebook.com/a2z.auto.detailing" target="_blank" rel="noopener" aria-label="A2Z Detailing on Facebook" class="footer-social">
+      <address style="font-size:.82rem;color:rgba(255,255,255,.4);line-height:1.6;font-style:normal;margin-bottom:1rem;">
+        <span style="display:flex;align-items:flex-start;gap:.4rem;">
+          <i data-feather="map-pin" style="width:12px;height:12px;color:var(--gold);margin-top:.2rem;flex-shrink:0;"></i>
+          1222 Flint Avenue, Langford BC V9B 5Y4
+        </span>
+      </address>
+      <div style="display:flex;gap:.6rem;margin-bottom:1rem;">
+        <a href="https://www.facebook.com/a2z.auto.detailing" target="_blank" rel="noopener" aria-label="Facebook" class="footer-social">
           <i data-feather="facebook" style="width:15px;height:15px;"></i>
         </a>
-        <a href="https://www.instagram.com/a2z_auto_detailing/" target="_blank" rel="noopener" aria-label="A2Z Detailing on Instagram" class="footer-social">
+        <a href="https://www.instagram.com/a2z_auto_detailing/" target="_blank" rel="noopener" aria-label="Instagram" class="footer-social">
           <i data-feather="instagram" style="width:15px;height:15px;"></i>
         </a>
       </div>
+      <!-- Quick contact on mobile -->
+      <a href="tel:+12508917075" onclick="trackCallClick()" style="display:inline-flex;align-items:center;gap:.5rem;background:#c9933a;color:#fff;padding:.65rem 1.25rem;border-radius:10px;font-size:.84rem;font-weight:700;text-decoration:none;margin-top:.25rem;">
+        <i data-feather="phone" style="width:13px;height:13px;"></i>
+        (250) 891-7075
+      </a>
     </div>
 
-    <!-- SERVICES -->
-    <div>
-      <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:1.25rem;">Services</div>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:.75rem;">
-        <li><a href="/services.html#auto" style="font-size:.85rem;">Auto Detailing</a></li>
-        <li><a href="/services.html#auto" style="font-size:.85rem;">Interior Detailing</a></li>
-        <li><a href="/services.html#auto" style="font-size:.85rem;">Ceramic Coating</a></li>
-        <li><a href="/services.html#house" style="font-size:.85rem;">House Cleaning</a></li>
-        <li><a href="/services.html#house" style="font-size:.85rem;">Move-Out Cleaning</a></li>
-        <li><a href="/services.html#exterior" style="font-size:.85rem;">Pressure Washing</a></li>
-      </ul>
+    <!-- SERVICES accordion -->
+    <div class="ft-acc">
+      <button class="ft-acc-toggle">
+        <span class="ft-acc-label">Services</span>
+        <svg class="ft-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="ft-acc-body">
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.75rem;padding:.5rem 0 .75rem;">
+          <li><a href="/services.html#auto"     style="font-size:.85rem;">Auto Detailing</a></li>
+          <li><a href="/services.html#auto"     style="font-size:.85rem;">Interior Detailing</a></li>
+          <li><a href="/services.html#auto"     style="font-size:.85rem;">Ceramic Coating</a></li>
+          <li><a href="/services.html#auto"     style="font-size:.85rem;">Paint Correction</a></li>
+          <li><a href="/services.html#house"    style="font-size:.85rem;">House Cleaning</a></li>
+          <li><a href="/services.html#house"    style="font-size:.85rem;">Move-Out Cleaning</a></li>
+          <li><a href="/services.html#exterior" style="font-size:.85rem;">Pressure Washing</a></li>
+          <li><a href="/fleet.html"             style="font-size:.85rem;">Fleet Services</a></li>
+        </ul>
+      </div>
     </div>
 
-    <!-- LOCATIONS -->
-    <div>
-      <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:1.25rem;">Service Areas</div>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:.75rem;">
-        <li><a href="/locations/detailing_victoria.html" style="font-size:.85rem;">Victoria BC</a></li>
-        <li><a href="/locations/detailing_langford.html" style="font-size:.85rem;">Langford BC</a></li>
-        <li><a href="/locations/detailing_saanich.html" style="font-size:.85rem;">Saanich BC</a></li>
-        <li><a href="/locations/detailing_sidney.html" style="font-size:.85rem;">Sidney BC</a></li>
-        <li><a href="/locations/detailing_esquimalt.html" style="font-size:.85rem;">Esquimalt BC</a></li>
-        <li><a href="/locations/detailing_colwood.html" style="font-size:.85rem;">Colwood BC</a></li>
-        <li><a href="/locations/detailing_oakbay.html" style="font-size:.85rem;">Oak Bay BC</a></li>
-        <li><a href="/locations/detailing_duncan.html" style="font-size:.85rem;">Duncan BC</a></li>
-      </ul>
+    <!-- SERVICE AREAS accordion -->
+    <div class="ft-acc">
+      <button class="ft-acc-toggle">
+        <span class="ft-acc-label">Service Areas</span>
+        <svg class="ft-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="ft-acc-body">
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.75rem;padding:.5rem 0 .75rem;">
+          <li><a href="/locations/detailing_victoria.html"  style="font-size:.85rem;">Victoria BC</a></li>
+          <li><a href="/locations/detailing_langford.html"  style="font-size:.85rem;">Langford BC</a></li>
+          <li><a href="/locations/detailing_saanich.html"   style="font-size:.85rem;">Saanich BC</a></li>
+          <li><a href="/locations/detailing_sidney.html"    style="font-size:.85rem;">Sidney BC</a></li>
+          <li><a href="/locations/detailing_esquimalt.html" style="font-size:.85rem;">Esquimalt BC</a></li>
+          <li><a href="/locations/detailing_colwood.html"   style="font-size:.85rem;">Colwood BC</a></li>
+          <li><a href="/locations/detailing_oakbay.html"    style="font-size:.85rem;">Oak Bay BC</a></li>
+          <li><a href="/locations/detailing_duncan.html"    style="font-size:.85rem;">Duncan BC</a></li>
+        </ul>
+      </div>
     </div>
 
-    <!-- CONTACT -->
-    <div>
-      <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:1.25rem;">Contact</div>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:.85rem;">
-        <li>
-          <a href="tel:+12508917075" style="display:flex;align-items:center;gap:.6rem;font-size:.85rem;">
-            <i data-feather="phone" style="width:14px;height:14px;flex-shrink:0;"></i>
-            (250) 891-7075
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/a2z_auto_detailing/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:.6rem;font-size:.85rem;">
-            <i data-feather="instagram" style="width:14px;height:14px;flex-shrink:0;"></i>
-            @a2z_auto_detailing
-          </a>
-        </li>
-        <li><a href="/about.html" style="font-size:.85rem;">About Us</a></li>
-        <li><a href="/faq.html" style="font-size:.85rem;">FAQ</a></li>
-        <li><a href="/gallery.html" style="font-size:.85rem;">Gallery</a></li>
-        <li><a href="/contact.html" style="font-size:.85rem;">Get a Quote</a></li>
-      </ul>
+    <!-- INFO accordion -->
+    <div class="ft-acc">
+      <button class="ft-acc-toggle">
+        <span class="ft-acc-label">Company</span>
+        <svg class="ft-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="ft-acc-body">
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.85rem;padding:.5rem 0 .75rem;">
+          <li><a href="/about.html"   style="font-size:.85rem;">About Us</a></li>
+          <li><a href="/pricing.html" style="font-size:.85rem;">Pricing &amp; Membership</a></li>
+          <li><a href="/gallery.html" style="font-size:.85rem;">Gallery</a></li>
+          <li><a href="/blog/"        style="font-size:.85rem;">Blog</a></li>
+          <li><a href="/faq.html"     style="font-size:.85rem;">FAQ</a></li>
+          <li><a href="/fleet.html"   style="font-size:.85rem;">Fleet Services</a></li>
+          <li><a href="/contact.html" style="font-size:.85rem;">Get a Quote</a></li>
+          <li>
+            <a href="https://www.instagram.com/a2z_auto_detailing/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:.5rem;font-size:.85rem;">
+              <i data-feather="instagram" style="width:13px;height:13px;"></i>
+              @a2z_auto_detailing
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
   </div>
 
+  <!-- DIVIDER -->
   <div style="max-width:1200px;margin:0 auto;padding:0 1.5rem;">
     <div style="height:1px;background:rgba(255,255,255,.07);"></div>
   </div>
 
-  <div style="max-width:1200px;margin:0 auto;padding:1.4rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;">
-    <p style="font-size:.78rem;color:rgba(255,255,255,.25);">&copy;2026 A2Z Detailing · Victoria BC · All rights reserved</p>
+  <!-- BOTTOM BAR -->
+  <div style="max-width:1200px;margin:0 auto;padding:1.25rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;">
+    <p style="font-size:.78rem;color:rgba(255,255,255,.42);">&copy;2026 A2Z Detailing · Victoria BC · All rights reserved</p>
     <div style="display:flex;gap:1.25rem;">
-      <a href="/about.html" style="font-size:.75rem;color:rgba(255,255,255,.2);">About</a>
-      <a href="/contact.html" style="font-size:.75rem;color:rgba(255,255,255,.2);">Contact</a>
-      <a href="/faq.html" style="font-size:.75rem;color:rgba(255,255,255,.2);">FAQ</a>
+      <a href="/about.html"   style="font-size:.75rem;color:rgba(255,255,255,.42);">About</a>
+      <a href="/contact.html" style="font-size:.75rem;color:rgba(255,255,255,.42);">Contact</a>
+      <a href="/faq.html"     style="font-size:.75rem;color:rgba(255,255,255,.42);">FAQ</a>
+      <a href="/sitemap.xml"  style="font-size:.75rem;color:rgba(255,255,255,.42);">Sitemap</a>
     </div>
   </div>
+
 </footer>
-
-<style>
-@media (max-width:860px) { .footer-grid { grid-template-columns:1fr 1fr !important; } }
-@media (max-width:540px) { .footer-grid { grid-template-columns:1fr !important; } }
-</style>
-
-<script>
-if (window.feather) feather.replace();
-</script>
