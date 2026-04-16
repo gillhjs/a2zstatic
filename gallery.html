@@ -1,121 +1,50 @@
 <!doctype html>
 <html lang="en">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D20DRXVPK0"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-D20DRXVPK0');
-</script>
-
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Detailing Gallery Victoria BC | A2Z Detailing</title>
-<meta name="description" content="Real auto detailing, house cleaning and pressure washing results from A2Z Detailing — serving Victoria BC, Langford, Sidney and surrounding areas.">
+<title>Detailing Gallery Victoria BC | Before & After Photos | A2Z Detailing</title>
+<meta name="description" content="Real auto detailing, house cleaning and pressure washing results from A2Z Detailing — serving Victoria BC, Langford, Sidney and surrounding areas. See before and after photos.">
 <link rel="canonical" href="https://a2zdetailing.ca/gallery.html">
-<meta property="og:title" content="Detailing Gallery Victoria BC | A2Z Detailing">
-<meta property="og:description" content="Real auto detailing, house cleaning and pressure washing results from A2Z Detailing — serving Victoria BC, Langford, Sidney and surrounding areas.">
-<meta property="og:image" content="https://a2zdetailing.ca/">
-<meta property="og:url" content="https://a2zdetailing.ca/gallery.html">
-<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="/icon-192x192.png">
 <link rel="manifest" href="/manifest.json">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/feather-icons"></script>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<style>
-* { box-sizing: border-box; }
-body { font-family: 'Inter', sans-serif; background: #fff; color: #0f172a; overflow-x: hidden; }
-.pf { font-family: 'Playfair Display', Georgia, serif; }
-:root { --gold: #c9933a; --navy: #0a0f1e; --border: #e8ecf0; }
-.pill { display:inline-flex;align-items:center;gap:.4rem;background:rgba(201,147,58,.1);border:1px solid rgba(201,147,58,.25);color:var(--gold);font-size:.7rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;padding:.35rem .9rem;border-radius:999px; }
-
-/* Filter tabs */
-.filter-tab {
-  padding:.55rem 1.25rem;border-radius:999px;font-size:.85rem;font-weight:500;
-  color:#475569;border:1.5px solid var(--border);background:#fff;cursor:pointer;
-  transition:all .2s;font-family:'Inter',sans-serif;white-space:nowrap;
-}
-.filter-tab:hover { border-color:var(--gold);color:var(--navy); }
-.filter-tab.active { background:var(--navy);color:#fff;border-color:var(--navy); }
-
-/* Gallery grid */
-.gallery-grid {
-  columns: 3; column-gap: 1.25rem;
-}
-.gallery-item {
-  break-inside: avoid; margin-bottom: 1.25rem;
-  border-radius: 16px; overflow: hidden;
-  position: relative; cursor: pointer;
-  transition: opacity .35s, transform .35s;
-}
-.gallery-item.hidden { opacity: 0; pointer-events: none; position: absolute; }
-.gallery-item img { width: 100%; display: block; transition: transform .5s ease; }
-.gallery-item:hover img { transform: scale(1.04); }
-.gallery-overlay {
-  position: absolute; inset: 0;
-  background: linear-gradient(transparent 40%, rgba(7,10,20,.7));
-  opacity: 0; transition: opacity .3s;
-  display: flex; align-items: flex-end; padding: 1.25rem;
-}
-.gallery-item:hover .gallery-overlay { opacity: 1; }
-.overlay-label { font-size: .85rem; font-weight: 600; color: #fff; }
-.overlay-cat { font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #c9933a; margin-bottom: .25rem; display: block; }
-
-/* Lightbox */
-.lightbox { position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:100;display:none;align-items:center;justify-content:center;padding:2rem; }
-.lightbox.open { display:flex; }
-.lightbox img { max-width:100%;max-height:85vh;border-radius:12px;box-shadow:0 40px 100px rgba(0,0,0,.6); }
-.lb-close { position:absolute;top:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s; }
-.lb-close:hover { background:rgba(255,255,255,.2); }
-.lb-nav { position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s; }
-.lb-nav:hover { background:rgba(255,255,255,.2); }
-#lbPrev { left:1.5rem; }
-#lbNext { right:1.5rem; }
-
-@media (max-width: 860px) { .gallery-grid { columns: 2; } }
-@media (max-width: 500px) { .gallery-grid { columns: 1; } }
-</style>
-<!-- Microsoft Clarity -->
-<script type="text/javascript">
-(function(c,l,a,r,i,t,y){
-c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-})(window, document, "clarity", "script", "vwwo7p21lp");
-</script>
-
-<meta property="og:title" content="Gallery | A2Z Detailing Work Samples">
-<meta property="og:description" content="See our professional auto detailing, house cleaning, and pressure washing work in Victoria BC.">
-<meta property="og:image" content="https://a2zdetailing.ca/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Detailing Gallery Victoria BC | A2Z Detailing Results">
+<meta property="og:description" content="Real auto detailing, house cleaning and pressure washing results from A2Z Detailing in Victoria BC.">
+<meta property="og:image" content="https://a2zdetailing.ca/images/image_collage_1.webp">
 <meta property="og:url" content="https://a2zdetailing.ca/gallery.html">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Gallery | A2Z Detailing Work Samples">
-<meta name="twitter:description" content="See our professional auto detailing, house cleaning, and pressure washing work in Victoria BC.">
-<meta name="twitter:image" content="https://a2zdetailing.ca/">
+<meta name="twitter:title" content="Detailing Gallery Victoria BC | A2Z Detailing">
+<meta name="twitter:description" content="Real before and after results from auto detailing, house cleaning and pressure washing in Victoria BC.">
+<meta name="twitter:image" content="https://a2zdetailing.ca/images/image_collage_1.webp">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D20DRXVPK0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D20DRXVPK0');</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","vwwo7p21lp");</script>
+<script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
 <div id="header"></div>
 <main>
 
 <!-- PAGE BAR -->
-<div style="background:#f8fafc;border-bottom:1px solid #e8ecf0;padding:2.25rem 0;">
-  <div style="max-width:1200px;margin:0 auto;padding:0 1.5rem;">
-    <div style="font-size:.77rem;color:#94a3b8;display:flex;align-items:center;gap:.4rem;margin-bottom:.6rem;">
-      <a href="/index.html" style="color:#94a3b8;text-decoration:none;" onmouseover="this.style.color='#0a0f1e'" onmouseout="this.style.color='#94a3b8'">Home</a>
-      <span style="color:#cbd5e1;">/</span>
-      <span style="color:#475569;">Gallery</span>
-    </div>
+<div class="page-bar">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/index.html">Home</a>
+      <span>/</span>
+      <span style="color:var(--text-body);">Gallery</span>
+    </nav>
     <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
       <div>
         <h1 class="pf" style="font-size:clamp(1.9rem,3.5vw,2.6rem);font-weight:700;color:var(--navy);line-height:1.1;">Our Work</h1>
-        <p style="color:#64748b;font-size:.93rem;margin-top:.4rem;">Real results from auto detailing, house cleaning &amp; pressure washing</p>
+        <p style="color:var(--text-muted);font-size:.93rem;margin-top:.4rem;">Real results — auto detailing, house cleaning &amp; pressure washing</p>
       </div>
-      <a href="/contact.html" style="display:inline-flex;align-items:center;gap:.5rem;background:var(--gold);color:#fff;padding:.75rem 1.5rem;border-radius:10px;font-size:.88rem;font-weight:700;text-decoration:none;box-shadow:0 4px 14px rgba(201,147,58,.35);transition:background .2s;" onmouseover="this.style.background='#b5832d'" onmouseout="this.style.background='var(--gold)'">
+      <a href="/contact.html" onclick="trackQuoteClick()" class="btn-cta">
         Book a Service
       </a>
     </div>
@@ -124,98 +53,104 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
 <!-- FILTER + GALLERY -->
 <section style="padding:3.5rem 0 5rem;">
-  <div style="max-width:1200px;margin:0 auto;padding:0 1.5rem;">
-
+  <div class="container">
     <!-- Filter tabs -->
-    <div style="display:flex;gap:.65rem;flex-wrap:wrap;margin-bottom:2.5rem;overflow-x:auto;padding-bottom:.25rem;">
+    <div style="display:flex;gap:.65rem;flex-wrap:wrap;margin-bottom:2.5rem;" role="group" aria-label="Filter gallery by category">
       <button class="filter-tab active" data-filter="all">All Work</button>
       <button class="filter-tab" data-filter="auto">Auto Detailing</button>
       <button class="filter-tab" data-filter="house">House Cleaning</button>
       <button class="filter-tab" data-filter="exterior">Exterior Washing</button>
     </div>
 
-    <!-- Masonry grid -->
+    <!-- Gallery grid -->
     <div class="gallery-grid" id="galleryGrid">
 
-      <div class="gallery-item" onclick="trackGallery('interior_detail')" data-cat="auto" data-label="Interior Detailing" onclick="openLightbox(0)">
-        <img src="images/image_1 (1).webp" alt="Interior Detailing">
+      <div class="gallery-item" data-cat="auto" data-src="images/image_1 (1).webp" data-label="Interior Detailing">
+        <img src="images/image_1 (1).webp" alt="Interior car detailing Victoria BC — deep cleaned seats and dashboard" loading="lazy">
         <div class="gallery-overlay">
           <div><span class="overlay-cat">Auto Detailing</span><span class="overlay-label">Interior Detailing</span></div>
         </div>
       </div>
 
-      <div class="gallery-item" onclick="trackGallery('exterior_detail')" data-cat="auto" data-label="Exterior Detail" onclick="openLightbox(1)">
-        <img src="images/image-s4.webp" alt="Exterior Detail">
+      <div class="gallery-item" data-cat="auto" data-src="images/image-s4.webp" data-label="Full Exterior Detail">
+        <img src="images/image-s4.webp" alt="Full exterior auto detail Victoria BC — polished paintwork" loading="lazy">
         <div class="gallery-overlay">
           <div><span class="overlay-cat">Auto Detailing</span><span class="overlay-label">Full Exterior Detail</span></div>
         </div>
       </div>
 
-      <div class="gallery-item" onclick="trackGallery('move_in_clean')" data-cat="house" data-label="Deep Home Cleaning" onclick="openLightbox(2)">
-        <img src="images/image-s12.webp" alt="Home Cleaning">
+      <div class="gallery-item" data-cat="house" data-src="images/image-s12.webp" data-label="Deep Home Cleaning">
+        <img src="images/image-s12.webp" alt="Deep house cleaning Victoria BC — kitchen and living areas" loading="lazy">
         <div class="gallery-overlay">
           <div><span class="overlay-cat">House Cleaning</span><span class="overlay-label">Deep Home Cleaning</span></div>
         </div>
       </div>
 
-      <div class="gallery-item" onclick="trackGallery('pressure_washing')" data-cat="exterior" data-label="Pressure Washing" onclick="openLightbox(3)">
-        <img src="images/Screenshot 2026-03-09 170222.webp" alt="Pressure Washing">
+      <div class="gallery-item" data-cat="exterior" data-src="images/Screenshot 2026-03-09 170222.webp" data-label="Driveway Pressure Wash">
+        <img src="images/Screenshot 2026-03-09 170222.webp" alt="Pressure washing driveway Victoria BC — before and after" loading="lazy">
         <div class="gallery-overlay">
           <div><span class="overlay-cat">Exterior Washing</span><span class="overlay-label">Driveway Pressure Wash</span></div>
         </div>
       </div>
 
-      <div class="gallery-item" data-cat="auto" data-label="Paint Correction" onclick="openLightbox(4)">
-        <img src="images/image_1 (3).webp" alt="Paint Correction">
+      <div class="gallery-item" data-cat="auto" data-src="images/image_1 (3).webp" data-label="Paint Correction">
+        <img src="images/image_1 (3).webp" alt="Paint correction and polishing Victoria BC" loading="lazy">
         <div class="gallery-overlay">
           <div><span class="overlay-cat">Auto Detailing</span><span class="overlay-label">Paint Correction</span></div>
         </div>
       </div>
 
-      <div class="gallery-item" onclick="trackGallery('regular_clean')" data-cat="house" data-label="Kitchen Clean" onclick="openLightbox(5)">
-        <img src="images/image-s14.webp" alt="Kitchen Cleaning">
+      <div class="gallery-item" data-cat="house" data-src="images/image-s14.webp" data-label="Kitchen Deep Clean">
+        <img src="images/image-s14.webp" alt="Kitchen deep cleaning Victoria BC — sparkling clean appliances" loading="lazy">
         <div class="gallery-overlay">
           <div><span class="overlay-cat">House Cleaning</span><span class="overlay-label">Kitchen Deep Clean</span></div>
         </div>
       </div>
 
-      <div class="gallery-item" onclick="trackGallery('ceramic_coating')" data-cat="auto" data-label="Ceramic Coating" onclick="openLightbox(6)">
-        <img src="images/image-s3.webp" alt="Ceramic Coating">
+      <div class="gallery-item" data-cat="auto" data-src="images/image-s3.webp" data-label="Ceramic Coating">
+        <img src="images/image-s3.webp" alt="Ceramic coating applied to vehicle Victoria BC" loading="lazy">
         <div class="gallery-overlay">
           <div><span class="overlay-cat">Auto Detailing</span><span class="overlay-label">Ceramic Coating</span></div>
         </div>
       </div>
 
-     <div class="gallery-item" onclick="trackGallery('roof_moss')" data-cat="exterior" data-label="Roof Moss Removal" onclick="openLightbox(7)">
-        <img src="images/a2z542.webp" alt="Roof Moss Removal">
+      <div class="gallery-item" data-cat="exterior" data-src="images/a2z542.webp" data-label="Roof Moss Removal">
+        <img src="images/a2z542.webp" alt="Roof moss removal Victoria BC — clean shingles after treatment" loading="lazy">
         <div class="gallery-overlay">
           <div><span class="overlay-cat">Exterior Washing</span><span class="overlay-label">Roof Moss Removal</span></div>
         </div>
       </div>
 
-      <div class="gallery-item" onclick="trackGallery('deep_clean')" data-cat="house" data-label="Move-Out Clean" onclick="openLightbox(8)">
-        <img src="images/image-s11.webp" alt="Move-Out Cleaning">
+      <div class="gallery-item" data-cat="house" data-src="images/image-s11.webp" data-label="Move-Out Clean">
+        <img src="images/image-s11.webp" alt="Move-out cleaning Victoria BC — deposit-ready property" loading="lazy">
         <div class="gallery-overlay">
           <div><span class="overlay-cat">House Cleaning</span><span class="overlay-label">Move-Out Clean</span></div>
         </div>
       </div>
 
-     <div class="gallery-item" onclick="trackGallery('patio_restore')" data-cat="exterior" data-label="Patio Cleaning" onclick="openLightbox(9)">
-        <img src="images/Screenshot 2026-03-09 171707.webp" alt="Patio Cleaning">
+      <div class="gallery-item" data-cat="auto" data-src="images/image_collage_1.webp" data-label="Full Detail Package">
+        <img src="images/image_collage_1.webp" alt="Full auto detail package Victoria BC — complete vehicle transformation" loading="lazy">
         <div class="gallery-overlay">
-          <div><span class="overlay-cat">Exterior Washing</span><span class="overlay-label">Patio &amp; Deck Restore</span></div>
+          <div><span class="overlay-cat">Auto Detailing</span><span class="overlay-label">Full Detail Package</span></div>
         </div>
       </div>
 
-      <div class="gallery-item" onclick="trackGallery('exterior_detail')" data-cat="auto" data-label="Wheel Detail" onclick="openLightbox(10)">
-        <img src="images/image_1 (5).webp" alt="Wheel Detail">
+      <div class="gallery-item" data-cat="exterior" data-src="images/Screenshot 2026-03-09 170228.webp" data-label="Patio Cleaning">
+        <img src="images/Screenshot 2026-03-09 170228.webp" alt="Patio pressure washing Victoria BC — clean deck and patio stones" loading="lazy">
         <div class="gallery-overlay">
-          <div><span class="overlay-cat">Auto Detailing</span><span class="overlay-label">Wheel &amp; Tyre Detail</span></div>
+          <div><span class="overlay-cat">Exterior Washing</span><span class="overlay-label">Patio Cleaning</span></div>
         </div>
       </div>
 
-      <div class="gallery-item" onclick="trackGallery('regular_clean')" data-cat="house" data-label="Bathroom Clean" onclick="openLightbox(11)">
-        <img src="images/image-s16.webp" alt="Bathroom Cleaning">
+      <div class="gallery-item" data-cat="auto" data-src="images/image_collage_2.webp" data-label="Interior Restoration">
+        <img src="images/image_collage_2.webp" alt="Interior restoration — heavily soiled vehicle transformed" loading="lazy">
+        <div class="gallery-overlay">
+          <div><span class="overlay-cat">Auto Detailing</span><span class="overlay-label">Interior Restoration</span></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="house" data-src="images/image-s13.webp" data-label="Bathroom Deep Clean">
+        <img src="images/image-s13.webp" alt="Bathroom deep cleaning Victoria BC — spotless tile and fixtures" loading="lazy">
         <div class="gallery-overlay">
           <div><span class="overlay-cat">House Cleaning</span><span class="overlay-label">Bathroom Deep Clean</span></div>
         </div>
@@ -223,36 +158,51 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 
     </div>
 
-    <!-- Book CTA strip -->
-    <div style="background:#f8fafc;border:1px solid #e8ecf0;border-radius:20px;padding:2rem 2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.25rem;margin-top:1rem;">
-      <div>
-        <div class="pf" style="font-size:1.2rem;font-weight:700;color:var(--navy);">Like what you see?</div>
-        <p style="font-size:.88rem;color:#64748b;margin-top:.25rem;">Book your service today — same-day availability across Greater Victoria.</p>
-      </div>
-      <a href="/contact.html" style="display:inline-flex;align-items:center;gap:.5rem;background:var(--navy);color:#fff;padding:.85rem 1.75rem;border-radius:12px;font-weight:700;font-size:.9rem;text-decoration:none;transition:background .2s;" onmouseover="this.style.background='#162240'" onmouseout="this.style.background='var(--navy)'">
-        Get a Free Quote <i data-feather="arrow-right" style="width:15px;height:15px;"></i>
-      </a>
+    <!-- CTA after gallery -->
+    <div style="text-align:center;margin-top:3rem;padding:2.5rem;background:var(--off-white);border-radius:var(--radius-lg);border:1px solid var(--border);">
+      <div class="pill" style="justify-content:center;margin-bottom:.75rem;">Ready to book?</div>
+      <h2 class="pf" style="font-size:1.6rem;font-weight:700;color:var(--navy);margin-bottom:.6rem;">Want Results Like These?</h2>
+      <p style="color:var(--text-body);font-size:.93rem;margin-bottom:1.5rem;">Get in touch for a free quote — same-day available across Greater Victoria.</p>
+      <a href="/contact.html" onclick="trackQuoteClick()" class="btn-cta">Get a Free Quote</a>
     </div>
-
   </div>
 </section>
 
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
-  <button class="lb-close" onclick="closeLightboxBtn()"><i data-feather="x" style="width:18px;height:18px;"></i></button>
-  <button class="lb-nav" id="lbPrev" onclick="lbNavigate(-1);event.stopPropagation();"><i data-feather="chevron-left" style="width:18px;height:18px;"></i></button>
-  <img id="lightboxImg" src="" alt="">
-  <button class="lb-nav" id="lbNext" onclick="lbNavigate(1);event.stopPropagation();"><i data-feather="chevron-right" style="width:18px;height:18px;"></i></button>
-</div>
-
 </main>
 <div id="footer"></div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb-close" onclick="closeLightboxBtn()" aria-label="Close image viewer">
+    <i data-feather="x" style="width:18px;height:18px;"></i>
+  </button>
+  <button class="lb-nav" id="lbPrev" onclick="lbNavigate(-1);event.stopPropagation();" aria-label="Previous image">
+    <i data-feather="chevron-left" style="width:18px;height:18px;"></i>
+  </button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lb-nav" id="lbNext" onclick="lbNavigate(1);event.stopPropagation();" aria-label="Next image">
+    <i data-feather="chevron-right" style="width:18px;height:18px;"></i>
+  </button>
+</div>
+
+<div class="fab-stack" role="complementary" aria-label="Quick contact">
+  <a href="tel:+12508917075" onclick="trackCallClick()" class="fab" title="Call A2Z Detailing" aria-label="Call us">
+    <i data-feather="phone" style="width:22px;height:22px;"></i>
+  </a>
+  <a href="/contact.html" onclick="trackQuoteClick()" class="fab" title="Get a free quote" aria-label="Get a free quote">
+    <i data-feather="message-square" style="width:22px;height:22px;"></i>
+  </a>
+</div>
+
 <script>
 document.addEventListener("DOMContentLoaded", async () => {
-  const [h, f] = await Promise.all([fetch("components/header.html"), fetch("components/footer.html")]);
+  const [h, f] = await Promise.all([
+    fetch("/components/header.html"),
+    fetch("/components/footer.html")
+  ]);
   document.getElementById("header").innerHTML = await h.text();
   document.getElementById("footer").innerHTML = await f.text();
-  feather.replace();
+  if (window.feather) feather.replace();
 
   // Filter
   document.querySelectorAll(".filter-tab").forEach(tab => {
@@ -264,31 +214,38 @@ document.addEventListener("DOMContentLoaded", async () => {
         const show = filter === "all" || item.dataset.cat === filter;
         item.style.opacity = show ? "1" : "0.15";
         item.style.pointerEvents = show ? "" : "none";
+        item.style.cursor = show ? "pointer" : "default";
       });
+    });
+  });
+
+  // Attach lightbox to gallery items (click on img or overlay, not just button)
+  const items = document.querySelectorAll(".gallery-item");
+  items.forEach((item, idx) => {
+    item.addEventListener("click", () => {
+      if (item.style.pointerEvents === "none") return;
+      openLightbox(idx);
+      trackGallery(item.dataset.label || "gallery");
     });
   });
 });
 
 // Lightbox
-const imgs = [
-  "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=1400&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1400&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1400&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1597007066704-67bf2068d5b2?w=1400&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1400&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1400&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1615906655593-ad0386982a0f?w=1400&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1400&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1563453392212-326f5e854473?w=1400&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1400&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1400&auto=format&fit=crop",
-];
 let lbIdx = 0;
+function getImages() {
+  return Array.from(document.querySelectorAll(".gallery-item")).map(i => ({
+    src: i.dataset.src,
+    alt: i.querySelector("img").alt
+  }));
+}
 function openLightbox(i) {
+  const imgs = getImages();
   lbIdx = i;
-  document.getElementById("lightboxImg").src = imgs[i];
-  document.getElementById("lightbox").classList.add("open");
+  const lb = document.getElementById("lightbox");
+  const img = document.getElementById("lightboxImg");
+  img.src  = imgs[i].src;
+  img.alt  = imgs[i].alt;
+  lb.classList.add("open");
   document.body.style.overflow = "hidden";
   if (window.feather) feather.replace();
 }
@@ -300,43 +257,18 @@ function closeLightbox(e) {
   if (e.target === document.getElementById("lightbox")) closeLightboxBtn();
 }
 function lbNavigate(dir) {
+  const imgs = getImages();
   lbIdx = (lbIdx + dir + imgs.length) % imgs.length;
-  document.getElementById("lightboxImg").src = imgs[lbIdx];
+  const img = document.getElementById("lightboxImg");
+  img.src = imgs[lbIdx].src;
+  img.alt = imgs[lbIdx].alt;
 }
 document.addEventListener("keydown", e => {
-  if (e.key === "Escape") closeLightboxBtn();
+  if (!document.getElementById("lightbox").classList.contains("open")) return;
+  if (e.key === "Escape")     closeLightboxBtn();
   if (e.key === "ArrowRight") lbNavigate(1);
-  if (e.key === "ArrowLeft") lbNavigate(-1);
+  if (e.key === "ArrowLeft")  lbNavigate(-1);
 });
 </script>
-
-<script>
-
-function trackGallery(category){
-if(typeof gtag === "function"){
-gtag('event','gallery_click',{
-'event_category':'gallery',
-'event_label':category
-});
-}
-}
-
-</script>
-
-<div style="position:fixed;bottom:28px;right:28px;z-index:9999;display:flex;flex-direction:column;gap:12px;">
-  <a href="tel:+12508917075" onclick="trackCallClick()" title="Call us"
-     style="display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:#c9933a;color:#fff;text-decoration:none;box-shadow:0 4px 20px rgba(0,0,0,.25);transition:transform .2s,box-shadow .2s;"
-     onmouseover="this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 24px rgba(0,0,0,.35)'"
-     onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 20px rgba(0,0,0,.25)'">
-    <i data-feather="phone" style="width:24px;height:24px;"></i>
-  </a>
-  <a href="/contact.html" onclick="trackQuoteClick()" title="Get quote"
-     style="display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:#c9933a;color:#fff;text-decoration:none;box-shadow:0 4px 20px rgba(0,0,0,.25);transition:transform .2s,box-shadow .2s;"
-     onmouseover="this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 24px rgba(0,0,0,.35)'"
-     onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 20px rgba(0,0,0,.25)'">
-    <i data-feather="message-square" style="width:24px;height:24px;"></i>
-  </a>
-</div>
-
 </body>
 </html>

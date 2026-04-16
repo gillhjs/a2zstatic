@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thank You | A2Z Detailing Victoria BC</title>
+<meta name="description" content="Your quote request has been received. A2Z Detailing will be in touch shortly.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://a2zdetailing.ca/thanks.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="manifest" href="/manifest.json">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D20DRXVPK0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D20DRXVPK0');gtag('event','conversion',{event_category:'conversion',event_label:'quote_submitted'});</script>
+<script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+<div id="header"></div>
+<main>
+
+<div class="thanks-wrap">
+  <div style="max-width:520px;text-align:center;">
+    <div style="width:72px;height:72px;border-radius:50%;background:rgba(201,147,58,.12);border:2px solid rgba(201,147,58,.3);display:flex;align-items:center;justify-content:center;margin:0 auto 1.75rem;color:var(--gold);">
+      <i data-feather="check-circle" style="width:32px;height:32px;"></i>
+    </div>
+    <div class="pill" style="justify-content:center;margin-bottom:1rem;">Request Received</div>
+    <h1 class="pf" style="font-size:clamp(2rem,4vw,3rem);font-weight:800;color:var(--navy);margin-bottom:1rem;">
+      Thank You!
+    </h1>
+    <p style="color:var(--text-body);font-size:1rem;line-height:1.8;margin-bottom:.75rem;">
+      Your quote request has been received. We typically respond within a few hours — often much faster.
+    </p>
+    <p style="color:var(--text-body);font-size:.95rem;line-height:1.8;margin-bottom:2.5rem;">
+      For urgent requests, call or text us directly at <a href="tel:+12508917075" style="color:var(--gold);font-weight:600;">(250) 891-7075</a>.
+    </p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="/index.html" class="btn-navy">Back to Home</a>
+      <a href="/services.html" class="btn-cta">View Our Services</a>
+    </div>
+    <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
+      <p style="font-size:.82rem;color:var(--text-faint);margin-bottom:1rem;">Follow us for before &amp; after photos</p>
+      <div style="display:flex;gap:.75rem;justify-content:center;">
+        <a href="https://www.instagram.com/a2z_auto_detailing/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;color:var(--gold);font-weight:600;">
+          <i data-feather="instagram" style="width:16px;height:16px;"></i> Instagram
+        </a>
+        <a href="https://www.facebook.com/a2z.auto.detailing" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;color:var(--gold);font-weight:600;">
+          <i data-feather="facebook" style="width:16px;height:16px;"></i> Facebook
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+<div id="footer"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+  const [h, f] = await Promise.all([
+    fetch("/components/header.html"),
+    fetch("/components/footer.html")
+  ]);
+  document.getElementById("header").innerHTML = await h.text();
+  document.getElementById("footer").innerHTML = await f.text();
+  if (window.feather) feather.replace();
+});
+</script>
+</body>
+</html>
